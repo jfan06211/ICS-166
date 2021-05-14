@@ -87,13 +87,21 @@ label chapter2_confused:
     
     G "\"Hey! What are you waiting for? Grab your jacket and let's go! I don't want to stand in the crowd.\"" 
 
+    P "\"I think I am better not going to the bar since I haven't reach 21...\""
+
+    G "\"Bro, stop reading those stupid history books. A one-year-old can buy a drink now if they can speak. \"
+
     jump chapter2_bar
 
 label chapter2_pretend:
 
     G "\"Don't forget to grab your jacket! It is a little bit cold in the bar. They always set the temperature low. \""
 
-    P "\"Sure. Man City is definitely going to win this time. They have the Premier League already and the final is just another hard battle for Chelsea...\"
+    P "\"Wait are we going to a bar? I haven't reach 21, yet!\""
+
+    G "\"No one cares about age limit! If you can speak, you are legal to get a drink now. By the way, which team has a better chance to win this time? \"
+
+    P "\"Man City is definitely going to win this time. They have the Premier League already and the final is just another hard battle for Chelsea...\"
 
     G "\"Wait wait wait...Are you from 2021 or something? It is the year (time holder). It's the L.A versus Liverpool! \""
 
@@ -104,6 +112,27 @@ label chapter2_pretend:
     G "\"Yo! Stop zoning out! We won't have a place to sit if we are late! \""
 
     jump chapter2_bar
+
+label chapter2_bar:
+
+    N "(Protagonist's name) and the Guide is on their way to the bar \"Frolic Room\"."
+
+    show Ben
+
+    B "\"Hey you guys! Are you guys also going to watch the final? \""
+
+    G "\"Oh hi Ben! Are you going too? Would you like to joi  n us? We are going to the Forlic Room! \""
+
+    B "\"Sure! Watching soccer game in the Forlic Room could be cool. Do you guys think the L.A can win this final? \""
+
+    P "\"Based on my experience, Liverpool is going to win easily. They were the champion of the last year. The L.A is just a average team in MLS. They are not going to have any chances. \""
+
+    B "\"Dude, the L.A is not like 500 years ago. I am pretty sure the L.A is going to win this because we have best local players in the world. LA players will have incredible power fighting in LA! Liverpool is just a second-rated team in the Europe. The can't even make it to the first four place in the Premier League...\""
+
+    G "\"Time to stop guys. We still have 20 minutes to go. Why don't we slience and see what is going on tonight. \""
+
+    scene bar
+    with dissolve
 
     
     return
