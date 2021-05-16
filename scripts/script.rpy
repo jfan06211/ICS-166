@@ -3,6 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+define N = Character("Narrator")
 define L = Character("Lyra")
 define G = Character("The Guide")
 define LB = Character("Lizardmen Bandits")
@@ -34,28 +35,28 @@ label start:
     L "Once you add a story, pictures, and music, you can release it to the world!"
 
     # This ends the game.
-    
+
     #Chapter 2
 label chapter2_start:
     P "\"What is this thing? It seems like a door that connects another place. \""
 
     "\"Let me see if I can push it...\""
-    
+
     "..."
 
     "\"What happened? Did I just take a nap?\""
-    
-    "\"Some strong light is shining on my face that I can't open my eyes.\"" 
-    
+
+    "\"Some strong light is shining on my face that I can't open my eyes.\""
+
     "\"But the light feels so familiar.\""
 
     "......"
-    
+
     "\"Isn't it the light in my room?!\""
 
     "I try to block the light using my hands and finally I can open my eyes just a little bit."
 
-    "\"Brown chairs, empty lockers...\" It seems like I am in my room." 
+    "\"Brown chairs, empty lockers...\" It seems like I am in my room."
 
     "\"The blue mirror... Wait! The mirror!\""
 
@@ -68,28 +69,28 @@ label chapter2_start:
     "\"Who is this? I don't remember someone is going to see me at this time.\" I start become curious while I open the door"
 
     G "\"What's up (Protagonist's name)! Are you ready for the Champions League Final? We gotta go fast before the seats run out!\""
-    
+
 menu:
 
-    P "\"What are you talking about?\"":
+    "What are you talking about?":
         jump chapter2_confused
-    
-    P "\"Let's goooooo!!!\"":
+
+    "Let's goooooo!!!":
         jump chapter2_pretend
 
 label chapter2_confused:
-    
+
     G "\"How can you forget about this? It is the L.A versus Liverpool! Let's turn those British man down!\""
 
     P "Oh my god. Am I crazy? How can the L.A be in the Champions League and face Liverpool? They don't even on the same continent."
 
-    "ALso, is she Lyra? I don't remember that Lyra is a soccer fan. Unless...Unless this is a different world?"
-    
-    G "\"Hey! What are you waiting for? Grab your jacket and let's go! I don't want to stand in the crowd.\"" 
+    "Also, is she Lyra? I don't remember that Lyra is a soccer fan. Unless...Unless this is a different world?"
+
+    G "\"Hey! What are you waiting for? Grab your jacket and let's go! I don't want to stand in the crowd.\""
 
     P "\"I think I am better not going to the bar since I haven't reach 21...\""
 
-    G "\"Bro, stop reading those stupid history books. A one-year-old can buy a drink now if they can speak. \"
+    G "\"Bro, stop reading those stupid history books. A one-year-old can buy a drink now if they can speak. \""
 
     jump chapter2_bar
 
@@ -99,9 +100,9 @@ label chapter2_pretend:
 
     P "\"Wait are we going to a bar? I haven't reach 21, yet!\""
 
-    G "\"No one cares about age limit! If you can speak, you are legal to get a drink now. By the way, which team has a better chance to win this time? \"
+    G "\"No one cares about age limit! If you can speak, you are legal to get a drink now. By the way, which team has a better chance to win this time? \""
 
-    P "\"Man City is definitely going to win this time. They have the Premier League already and the final is just another hard battle for Chelsea...\"
+    P "\"Man City is definitely going to win this time. They have the Premier League already and the final is just another hard battle for Chelsea...\""
 
     G "\"Wait wait wait...Are you from 2021 or something? It is the year (time holder). It's the L.A versus Liverpool! \""
 
@@ -134,5 +135,5 @@ label chapter2_bar:
     scene bar
     with dissolve
 
-    
+
     return
