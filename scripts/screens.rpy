@@ -175,15 +175,17 @@ screen input(prompt):
     style_prefix "input"
 
     window:
+        style "nvl_window"
+        text prompt xalign 0.5 yalign 0.5
+        input id "input" color "#000000" size 30 xalign 0.5 yalign 0.6
 
-        vbox:
-            xalign gui.dialogue_text_xalign
-            xpos gui.dialogue_xpos
-            xsize gui.dialogue_width
-            ypos gui.dialogue_ypos
-
-            text prompt style "input_prompt"
-            input id "input"
+        #vbox:
+            #xalign gui.dialogue_text_xalign
+            #xpos gui.dialogue_xpos
+            #xsize gui.dialogue_width
+            #ypos gui.dialogue_ypos
+            #text prompt style "input_prompt"
+            #input id "input"
 
 style input_prompt is default
 
