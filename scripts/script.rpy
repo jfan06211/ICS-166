@@ -5,7 +5,7 @@
 
 define N = Character("Narrator")
 define L = Character("Lyra")
-define G = Character("The Guide")
+define G = Character("Calliope")
 define LB = Character("Lizardmen Bandits")
 define B = Character("Ben")
 define P = Character("[Protagonist]")
@@ -92,12 +92,14 @@ label start:
     "We are really living up to the technologies these days."
     unknown "Master, I have finished cleaning duties."
     P "Hm?"
-    # show cleanBot with moveinright
+    show cleanbot normal with moveinright
     "As I looked to my right to where the voice came from, a tall human-like android stood in front of me dressed in a suit."
     "It's the cleaning bot that was included with this house Lyra gave me a few years back."
+    show cleanbot talk
     cleanBot "Do you have any more requests, sir?"
     P "No, you can rest."
     cleanBot "Yes, Master."
+    hide cleanbot talk with dissolve
     "The android makes its way to the wall next to my room and turns itself into a small, circular object tucked neatly away into a shelf."
     P "I guess it's time to go to work."
     "I put away my plate into the automatic cleaning sink, and head back to my room."
@@ -267,7 +269,7 @@ label chapter2_bar:
 
     N "(Protagonist's name) and the Guide is on their way to the bar \"Frolic Room\"."
 
-    show Ben
+    show ben normal
 
     B "\"Hey you guys! Are you guys also going to watch the final? \""
 
