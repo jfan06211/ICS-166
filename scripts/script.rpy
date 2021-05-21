@@ -1,4 +1,4 @@
-﻿# The script of the game goes in this file.
+# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -350,6 +350,45 @@ label chapter2_bar:
      “The referee blows the whistle. The ball is now flying to the penalty area…”
      
      “GOALLLLLLLLLLLLLL! Liverpool has scored! Alison gave a powerful header and sent the ball into the net!”
+
+     "Liverpool fans starts cheering. Although they only occupied 1/4 of the bar, the noise they create can actually lift the roof."
+
+     LV "\"YES!!!!!We are the champion folks! This is our 7th Champions League title! I've waited for so many years!\""
+
+     N "On the other hand, all L.A fans are stunned. Some of them use hands to cover their face. They still can't believe this happened."
+
+     LB "\"This is not fair! The L.A can't lose! It must be the referee! They let Liverpool win so that they can put millions of dollars into their pocket! They do this every year! The Champions League is all fake...\""
+
+     LV "\"Yo calm down guys. You guys did great tonight. It is just us being lucky.\""
+     #Some bad words are coming out
+     LB "\"Shut up, you British pig! You are saying this because Liverpool wins. Just get out of this place! We are not happy to see you! Ugly  Red fans!\""
+
+     LV "\"This is not nice. How about you get off this bar, loser?\""
+
+     LB "\"How dare you! You want a fight? Let's fight!\""
+
+     G "\"Damn. This is not good. We have better leave.\""
+
+     B "\"Yeah. Let's finish our drink fast and go.\""
+
+     P "\"What? Are we leaving now? This fight haven't begun, yet! Don' worry too much. It should be just a normal bar fight.\""
+
+     G "\"No no no. Bar fights are not the normal fight you see on TVs. This is the part you don't want to experience.\""
+
+     "\"Let's just go before we can't.\""
+
+     N "More and more drunk people heard there is a fight in Frolic Room and trying to squeeze in to see what happened."
+
+     B "\"I think we are late. There is no way out now. All of the exits are blocked by crowd. We have better start moving to one of the exits can see if we can go through them.\""
+
+     P "\"Don't think too much. It is just a fight after match. Just enjoy it.\"" 
+
+     G "\"Let's hope it is a normal fight...\""
+
+     N "Before the Guide finish his words, a giant fire ball pass by and burn the TV out on the wall."
+
+     B "\"Looks like the fire ball is from the Fire Lizard.\""
+
      
      
     return
