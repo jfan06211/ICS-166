@@ -1,4 +1,4 @@
-# The script of the game goes in this file.
+﻿# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -13,7 +13,7 @@ define unknown = Character("???")
 define N = Character("Narrator")
 define HS = Character("House System")
 define cleanBot = Character("Clean Bot")
-define LV = Character(“Terry”)
+define LV = Character("Terry")
 
 # Custom transitions
 define flash = Fade(0.1, 0.0, 0.5, color="#fff")
@@ -292,64 +292,64 @@ label chapter2_bar:
     "Although they arrived at the bar 10 minutes earlier than the match starts, the seats are already full."
 
      “Fans that support the L.A arrived exceptional early. As a result, they occupy ¾ of seats while Liverpool fans can only get about ¼.”
-     
+
      “People start betting on the bar table. Looks like 70% of people think the L.A is going to win.”
-     
-     G “\”Looks like we are late. Ben, can you take [Protagonist] to a spot that we can stand comfortably? I am going to get you some drinks.\””
-     
-     B “\”Sure. It would be nice if we have Heineken.\”” 
-     
-     N “10 minutes later, the match officially starts. The [Protagonist] party watches the game in the middle of the bar.”
-     
-     P “\”I am so excited right now. I hope I can watch every match in this bar starting now. The atmosphere is just so good!\””
-     
-     G “\”Told ya.\””
-     
-     N “When the time comes to 35 minutes, Gordon scores with a free kick! It is also the first goal that the L.A scores in Champions Final!”
-     
-     “Fans of the L.A start cheering. They jump up from chairs and begin playing “waves”. On the other side, Liverpool fans don’t expect this goal. They finish their drinks and start asking the bartender for more beer.”
-     
-     “One of the Liverpool fan tries to cheer up his companion.”
-     
-     LV “\”Hey! It is just a lucky goal for them! I believe we are going to in at the end! Let’s go REDS!\””
-     
-     N “Some of the L.A fans heard Terry’s talk and start laughing.”
-     
-     LB “This is LA! No one can beat the L.A in LA!”
-     
+
+     G "\"Looks like we are late. Ben, can you take [Protagonist] to a spot that we can stand comfortably? I am going to get you some drinks.\""
+
+     B "\"Sure. It would be nice if we have Heineken.\""
+
+     N "10 minutes later, the match officially starts. The [Protagonist] party watches the game in the middle of the bar."
+
+     P "\"I am so excited right now. I hope I can watch every match in this bar starting now. The atmosphere is just so good!\""
+
+     G "\"Told ya.\""
+
+     N "When the time comes to 35 minutes, Gordon scores with a free kick! It is also the first goal that the L.A scores in Champions Final!"
+
+     "Fans of the L.A start cheering. They jump up from chairs and begin playing “waves”. On the other side, Liverpool fans don’t expect this goal. They finish their drinks and start asking the bartender for more beer."
+
+     "One of the Liverpool fan tries to cheer up his companion."
+
+     LV "\"Hey! It is just a lucky goal for them! I believe we are going to in at the end! Let’s go REDS!\""
+
+     N "Some of the L.A fans heard Terry’s talk and start laughing."
+
+     LB "This is LA! No one can beat the L.A in LA!"
+
      #some transition is needed
-     
-     N “Henderson scores for Liverpool just before half time. The score becomes 1-1.”
-     
-     LV “\”I told you folks. This is the first step to win.\””
-     
-     N “The L.A fans look unhappy about the score. They discuss the potential foul that happened before Henderson’s shot while the break.”
-     
-     G “\”I think the L.A players did a good job in the first half. The manager might need to consider placing one more mid field player to increase the possession.\”
-     
-     B “\”Nah. We need to substitute forward players at around 60 minutes. The startups look a little bit tired.\””
-     
-     P “\”Liverpool is going to win if they keep playing this counterattack strategy. 
-     
-     LB “\”Hey! You! Little Guy! Stop talking that loser “Liverpoor”! They are not going to beat us! No matter what strategy they are using!\””
-     
-     G “\”[Protagonist], they are the gang that controls almost all bars. Let’s just shut up and wait for the second half.\”” 
-     
-     P “Hmm. Then it is not surprise that they always talk like that. “
-     
+
+     N "Henderson scores for Liverpool just before half time. The score becomes 1-1."
+
+     LV "\"I told you folks. This is the first step to win.\""
+
+     N "The L.A fans look unhappy about the score. They discuss the potential foul that happened before Henderson’s shot while the break."
+
+     G "\"I think the L.A players did a good job in the first half. The manager might need to consider placing one more mid field player to increase the possession.\""
+
+     B "\"Nah. We need to substitute forward players at around 60 minutes. The startups look a little bit tired.\""
+
+     P "\"Liverpool is going to win if they keep playing this counterattack strategy.\""
+
+     LB "\"Hey! You! Little Guy! Stop talking that loser “Liverpoor”! They are not going to beat us! No matter what strategy they are using!\""
+
+     G "\"[Protagonist], they are the gang that controls almost all bars. Let’s just shut up and wait for the second half.\""
+
+     P "Hmm. Then it is not surprise that they always talk like that. "
+
      # some transition is needed
-     
-     N “The second half has started. The L.A choose to replace one of their Midfielder with a Forward to ensure they give enough pressure to Liverpool. At the meantime, Liverpool doesn’t make any changes. It seems like their manager is pretty satisfied with the startups.”
-     
-     N “After another 45 minutes, the score is still 1-1. In the last attack, Liverpool has its corner. It might be the last chance for Liverpool to end the game here.”
-     
-     N “Almost everyone in the bar stands up and staring at the screen. Some of the Liverpool fans are so nervous that they turn their face backward and start praying.”
-     
-     “Goalkeeper Alison from Liverpool side ran across the whole field and see if he can do something in this final attack.”
-     
-     “The referee blows the whistle. The ball is now flying to the penalty area…”
-     
-     “GOALLLLLLLLLLLLLL! Liverpool has scored! Alison gave a powerful header and sent the ball into the net!”
+
+     N "The second half has started. The L.A choose to replace one of their Midfielder with a Forward to ensure they give enough pressure to Liverpool. At the meantime, Liverpool doesn’t make any changes. It seems like their manager is pretty satisfied with the startups."
+
+     N "After another 45 minutes, the score is still 1-1. In the last attack, Liverpool has its corner. It might be the last chance for Liverpool to end the game here."
+
+     N "Almost everyone in the bar stands up and staring at the screen. Some of the Liverpool fans are so nervous that they turn their face backward and start praying."
+
+     "Goalkeeper Alison from Liverpool side ran across the whole field and see if he can do something in this final attack."
+
+     "The referee blows the whistle. The ball is now flying to the penalty area…"
+
+     "GOALLLLLLLLLLLLLL! Liverpool has scored! Alison gave a powerful header and sent the ball into the net!"
 
      "Liverpool fans starts cheering. Although they only occupied 1/4 of the bar, the noise they create can actually lift the roof."
 
@@ -381,14 +381,53 @@ label chapter2_bar:
 
      B "\"I think we are late. There is no way out now. All of the exits are blocked by crowd. We have better start moving to one of the exits can see if we can go through them.\""
 
-     P "\"Don't think too much. It is just a fight after match. Just enjoy it.\"" 
+     P "\"Don't think too much. It is just a fight after match. Just enjoy it.\""
 
      G "\"Let's hope it is a normal fight...\""
 
      N "Before the Guide finish his words, a giant fire ball pass by and burn the TV out on the wall."
 
+     P "\"Woah. What is that?\""
+
      B "\"Looks like the fire ball is from the Fire Lizard.\""
 
-     
-     
+     P "Lizard? Isn’t Lizard a kind of animal? How does it relate to fire?"
+
+     "Let me get closer and see…"
+
+     N "While the [Protagonist] is getting closer to the fighting stage, an ice arrow comes out of nowhere and pierces the wall."
+
+     G "\"Yo [Protagonist]! Stop moving backwards!\""
+
+     N "[Protagonist] didn’t hear the Guide because the crowd is getting crazy. Everyone is cheering for the fighters and some friends of Lizardmen Bandits is sniping Terry so that they can win the fight."
+
+     "As [Protagonist] moving, he finds out that the ice arrow is from a semi-transparent frog. "
+
+     P "Wow, I have never seen animals like this. They seem like the minions from movies."
+
+     LB "\"I like your minion. It looks strong. But I am going to kill you and it will be mine! Hahahahahaha…\""
+
+     LV "\"Don’t ever think about it, loser. \""
+
+     N "Suddenly, someone from crowd throws a flash bang and [Protagonist] can’t see anything."
+
+     "After [Protagonist] open his eyes, the fight has already started."
+
+     "Lizardmen Bandits and Terry is fighting in the middle of the bar while their minions are also fighting using their magic power. They use whatever is near them to attack and defense."
+
+     "The bar is completely in chaos. Chairs, knives, and bottles are flying in the Frolic Room."
+
+     "Suddenly, someone catches [Protagonist]’s arm and trying to drag him out of the frontline."
+
+     P "\"It’s you, Ben! I’ve never seen a fight like this! They are so cool!\""
+
+     B "\"Yes they are. But we need to leave. It is unsafe here…\""
+
+     N "While Ben is trying to convince [Protagonist], a stone-made arrow launches and pierces Ben’s body. "
+
+     #Chapter 2 Ends
+
+
+
+
     return
