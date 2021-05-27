@@ -125,7 +125,6 @@ label start:
     scene nightsky with Fade(0.5,2.0,0.5)
     "The night sky was still, and the light from the moon shines down the trail as I jog."
     "I keep my breath steady as the cold wind blow against my face with a freezing touch. The heat generated through my enery extertion slowly warms my face up."
-    #scene gardenlandtraillight
     P "\"Wait a minute.\""
     "In the corner of my eye, I saw a faint shimmer of light deep within the hills."
     P "\"What is that...?\""
@@ -153,13 +152,16 @@ label start:
             jump Ch1_continue
 
 label Ch1_continue:
+    scene nightsky_truckhover with dissolve
     P "\"Woahh, look at the size of that thing! It’s the newest truck model! That actually looks so coo-\""
     stop music fadeout 1.0
     "My leg slided on a pebble on the edge of the trail."
     P "\"W-woa..h..!!\""
     with vpunch
+    play sound "audio/fallDown.mp3"
     scene black
     "I tip over the side of the trail, my body swirling in motion as I roll down the slope of the trail into the bottom of the hill."
+    play sound "audio/fallDown.mp3"
     "Everything is spinning."
     play sound "audio/fallDown.mp3"
     with vpunch
