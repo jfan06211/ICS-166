@@ -119,6 +119,7 @@ label start:
     "Hmm..."
     P "\"Maybe a little jog wouldn't hurt to keep my blood flowing.\""
     "I stood up to get a hoodie in my closet before heading outside"
+    play sound "audio/doorOpened.mp3"
     scene bedroomchangenight
     hide bedroomchangenightlight
     scene nightsky with Fade(0.5,2.0,0.5)
@@ -129,23 +130,24 @@ label start:
     P "\"Wait a minute.\""
     "In the corner of my eye, I saw a faint shimmer of light deep within the hills."
     P "\"What is that...?\""
-    #play music enginesound
+    play sound "audio/hover_over.mp3"
     "A loud engine starts hovering behind me."
     P "\"What's that soun-\""
     menu:
         "Turn around":
-            #play music whoosh
+            play sound "audio/hover_over.mp3"
             "As I turned to look back, a truck flew over me at high velocity."
             "Its generated wind blew at me with full force."
             jump Ch1_continue
         "Keep running":
             "...Maybe it's nothing."
-            #play music engineroarslouder
+            play sound "audio/hover_over.mp3"
             "A truck flew over me at high velocity."
             "Its generated wind blew at me with full force."
             jump Ch1_continue
         "Stop":
             "I halted my jog and turned to where the sound came from."
+            play sound "audio/hover_over.mp3"
             "To my surprise, a huge truck flew over me with great velocity."
             "Its generated wind blew at me with full force."
             "Taken by surprise, I stepped back."
@@ -153,14 +155,16 @@ label start:
 
 label Ch1_continue:
     P "\"Woahh, look at the size of that thing! It’s the newest truck model! That actually looks so coo-\""
+    stop music fadeout 1.0
     "My leg slided on a pebble on the edge of the trail."
     P "\"W-woa..h..!!\""
     "I tip over the side of the trail, my body swirling in motion as I roll down the slope of the trail into the bottom of the hill."
     "Everything is spinning."
     "All until it abruptly stop as the impact from the fall forcefully struck a tree."
-    #play music THUD
+    play sound "audio/fallDown.mp3"
     with vpunch
     P "\"Argh!\""
+    play music "audio/night_ambience.mp3" fadein 1.0
     "My body jolted in pain as I slam myself into a tree."
     "Haven't felt something like this since the incident of me hitting my funny bone on the edge of a sofa."
     "Wasn't fun."
@@ -179,7 +183,7 @@ label Ch1_continue:
             "I peeked between the cracks of the door and saw some sort of flickering light emitting from an object."
             jump Ch1_enterShack
         "Knock on the door.":
-            #play music knockknockknock
+            play sound "audio/door_knock.mp3"
             "I knocked on the door several times."
             P "\"Hm...still no response. I guess it really is abandoned.\""
             jump Ch1_enterShack
@@ -187,6 +191,7 @@ label Ch1_continue:
             jump Ch1_enterShack
 
 label Ch1_enterShack:
+    play sound "audio/doorOpened.mp3"
     "I opened the door and walked towards the flickering object."
     P "\"A mirror...?\""
     "I looked inside the mirror and the light grew brighter."
@@ -214,7 +219,7 @@ label chapter2_start:
     "\"But the light feels so familiar.\""
 
     "......"
-    play music "audio/BTR-Ominous-01.mp3"
+    play music "audio/BTR-Ominous-01.mp3" fadein 1.0
 
     "\"Isn't it the light in my room?!\""
 
