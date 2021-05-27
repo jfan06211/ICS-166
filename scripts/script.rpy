@@ -157,9 +157,10 @@ label Ch1_continue:
     stop music fadeout 1.0
     "My leg slided on a pebble on the edge of the trail."
     P "\"W-woa..h..!!\""
+    with vpunch
+    scene black
     "I tip over the side of the trail, my body swirling in motion as I roll down the slope of the trail into the bottom of the hill."
     "Everything is spinning."
-    "All until it abruptly stop as the impact from the fall forcefully struck a tree."
     play sound "audio/fallDown.mp3"
     with vpunch
     P "\"Argh!\""
@@ -173,6 +174,7 @@ label Ch1_continue:
     scene forest_light_flicker with dissolve
     scene forest with dissolve
     P "\"What...is that?\""
+    play sound "audio/leave_rustle.mp3"
     "I slowly stood up, with the pain lingers, as I strive to take a closer look at the flickering light."
     scene shack_bg with fade
     P "\"Is that a shack?\""
