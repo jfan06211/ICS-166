@@ -441,6 +441,174 @@ label chapter2_bar:
 
     #Chapter 2 Ends
 
+    #Chapter 3 Begins
+label chapter3_start:
+    "I couldn’t stop staring at Ben. He was a complete mess, but it went beyond his usual dirt-filled attire."
+
+    "He had collapsed on the floor. His tanned clothes were now stained red. His tousled hair was drenched in sweat. The arrow still pierced through his body."
+
+    "His expression was one I had never seen before. His eyes were barely open, not seeming to be looking at anything at all. His mouth was agape, and his breathing was raspy and uneven."
+
+    "What was wrong with him?"
+
+# choice 1
+menu:
+    "Continue to Stare":
+        jump ch3_con_to_stare
+
+    "Grab the Arrow":
+        jump ch3_arrow
+
+    "Talk to Ben":
+        jump ch3_talk_to_ben
+
+label ch3_con_to_stare:
+    G "What the hell are you standing around for?!"
+
+    P "Huh? I just -"
+
+    jump ch3_endchoice1
+
+label ch3_arrow:
+    G "Stop that! Let me handle it."
+
+    P "Oh, sorry, I just-"
+
+    jump ch3_endchoice1
+
+label ch3_talk_to_ben:
+    P "Ben? Come on, get up. You're... making me uncomfortable."
+
+    "There was no response. Ben didn't even look at me."
+
+    G "[Protagonist], what are you doing?!"
+
+    P "Huh? I was just -"
+
+label ch3_endchoice1:
+    G "Nevermind that. Help me get him out of here."
+
+    "Calliope grabbed Ben by the shoulders, and I grabbed him by the legs. He was much lighter than I expected."
+
+    # ADD BLACK SCENE TRANSITION HERE
+
+    "We took Ben and left the bar quickly and quietly. We looked for a quiet, open space, and finally ducked behind an alley a couple of buildings away."
+
+    # ADD NEW SCENE HERE
+
+    "We laid Ben down on the pavement. I thought about how uncomfortable the cold, hard ground must be, but Ben didn’t seem to notice."
+
+    "Calliope swung her bag out from around her shoulders and placed it on the floor. From the bag she took out a long, ragged piece of cloth."
+
+    "I watched as she carefully removed the arrow from Ben’s body, and then wrapped the cloth around Ben’s stomach. Then, she took out a plastic canteen and held it to his lips."
+
+    G "Come on Ben, you’ll be alright. Everything will be okay. Stay with me now."
+
+    "Calliope’s voice didn’t sound right. Its usual confidence and strength was gone, replaced by something that seemed to be breaking apart."
+
+    "Ben wasn’t acting right either. No responses. No eye contact. He wasn’t even trying to take a sip of water."
+
+# choice 2
+menu:
+    "Continue to Stare":
+        jump ch3_con_to_stare_2
+
+    "Talk to Calliope":
+        jump ch3_talk_to_cal_2
+
+    "Talk to Ben":
+        jump ch3_talk_to_ben_2
+
+label ch3_con_to_stare_2:
+    "I continued to stare at Ben, laying on the ground. His only movement came from his barely noticeable breaths. The look on Calliope’s face was one I had never seen on her before."
+
+    "Her expression was panicked, her eyes were watering, and she kept mumbling, begging Ben to stay here."
+
+    "I didn’t understand. Where was Ben going? How could someone be going somewhere when they didn’t move at all. Nothing was making sense."
+
+    "I suddenly felt very out of place. The reality of being in a completely different world, with completely different rules and ideas began to hit me. What was happening? What was I doing here?"
+
+    "Maybe I need to go. Maybe I wasn’t ever meant to be here."
+
+    "Before I could really consider leaving, Calliope began to cry out."
+
+    jump ch3_endchoice2
+
+label ch3_talk_to_cal_2:
+    P "Calliope? What’s going on? I don’t understand."
+
+    "Calliope turned and glared at me."
+
+    G "What’s there not to understand?! Ben is.. He’s…"
+
+    "She stopped talking to me, turning back to Ben."
+
+    G "Please Ben, please just stay a little longer and I can get help."
+
+    jump ch3_endchoice2
+
+label ch3_talk_to_ben_2:
+    P "Ben? What’s wrong? Can you get up and talk to us?"
+
+    "Again, Ben was silent. No sign that he even heard me at all."
+
+    "Before I could say another word, Calliope began to cry out."
+
+label ch3_endchoice2:
+    G "Ben? Ben!? No no no... Please we need you."
+
+    "Calliope was sobbing now. Tears were running down her face. I looked at Ben again. His raspy breaths had stopped, replaced with nothing but silence. His eyes were glassy, still staring at nothing."
+
+    "Calliope stopped crying out and took a deep breath. She wiped the tears from her face. Then, she took her hand and gently closed Ben’s eyes."
+
+    G "I’m sorry..."
+
+    P "Calliope? What’s going on?"
+
+    "Calliope turned to me suddenly. Immediately, the pain appeared in her face again, mixed in with a fierce anger."
+
+    G "What is wrong with you?!"
+
+    P "Huh? What do you-"
+
+    G "Just GO AWAY! You need to leave."
+
+    "I didn’t have words to respond. Why was she being like this?"
+
+    G "If it weren’t for you, Ben would still be here!"
+
+# Choice 3
+menu:
+    '"Ben is still here."':
+        jump ch3_ben_is_here_3
+
+    '"Fine, I\'ll leave."':
+        jump ch3_fine_ill_leave_3
+
+label ch3_ben_is_here_3:
+    G "What the hell is wrong with you!? He’s DEAD. Can’t you see that?! He’s DEAD and it’s all YOUR FAULT."
+
+    G "We’ve been risking our lives bringing you along, because you’re too stupid to understand basic common sense. And now enough is enough. You need to leave before you kill someone else too."
+
+    G "Ben would still be here if it weren’t for you — if it weren’t for me bringing you along."
+
+    G "You don’t belong here. Go back to wherever you came from and don’t come back. You’ve done enough here."
+
+    "Calliope stopped looking at me. I thought about responding, but I had no words and I doubted anything I said would make a difference."
+
+    jump ch3_endchoice3
+
+label ch3_fine_ill_leave_3:
+    G "Finally. The first reasonable thing you’ve ever said. Now don’t say another word. Just go."
+
+label ch3_endchoice3:
+    "There was only one thing to do. It seemed my journey in this world was done now. There was no point in staying around."
+
+    # ADD BLACK SCREEN TRANSITION HERE
+    "It was a quiet, lonely walk back to the mirror."
+
+    # End of Chapter 3
+
     #Chapter 4
 
 label chapter4_start:
