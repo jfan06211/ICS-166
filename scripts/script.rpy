@@ -28,9 +28,12 @@ label start:
     # Chapter 1
     stop music fadeout 1.0
     "..."
+    scene dream_blur with dissolve
     "Where...am I?"
+    scene dream_blur_sil1 with dissolve
     unknown "\"...Look at our baby honey! Isn't it just the most adorable thing?\""
     "Whose voice is that...?"
+    scene dream_blur_sil2 with dissolve
     unknown "\"Oh look how big our baby is! What should we name it?\""
     "Name..."
     $ Protagonist = renpy.input("What is your name?", length=32)
@@ -89,7 +92,6 @@ label start:
     hide lyra normal with dissolve
     "I nod, and we waved goodbye to each other. Lyra’s face smiles brightly as she departs."
     scene diningroom with fade
-    hide bedroomchangeday
     "I came out to the living room, and ate the breakfast Lyra cooked for me."
     "Blueberry pancakes with sunny side up eggs and bacon. Classic."
     "I’m currently living in a house near Garden Land Trailhead, one of the quietest parts of the city with its famous hiking trails."
@@ -111,7 +113,6 @@ label start:
     "I put away my plate into the automatic cleaning sink, and head back to my room."
     stop music fadeout 1.0
     scene bedroomchangenightlight with Fade(0.5,2.0,0.5)
-    hide diningroom
     play music "audio/night_theme.mp3"
     "It is now 8:30pm in the evening as I call off my job's meeting and shut down my computer."
     "Thinking about nothing, I laid down on my bed."
@@ -121,9 +122,7 @@ label start:
     "I stood up to get a hoodie in my closet before heading outside"
     play sound "audio/doorOpened.mp3"
     scene bedroomchangenight
-    hide bedroomchangenightlight
     scene nightsky with Fade(0.5,2.0,0.5)
-    hide bedroomchangenight
     "The night sky was still, and the light from the moon shines down the trail as I jog."
     "I keep my breath steady as the cold wind blow against my face with a freezing touch. The heat generated through my enery extertion slowly warms my face up."
     #scene gardenlandtraillight
@@ -165,14 +164,17 @@ label Ch1_continue:
     with vpunch
     P "\"Argh!\""
     play music "audio/night_ambience.mp3" fadein 1.0
+    scene forest with fade
     "My body jolted in pain as I slam myself into a tree."
     "Haven't felt something like this since the incident of me hitting my funny bone on the edge of a sofa."
     "Wasn't fun."
     P "\"Did I really trip on a rock while sidetracking...\""
     "Well that was an event."
-    #light in shack flickers
+    scene forest_light_flicker with dissolve
+    scene forest with dissolve
     P "\"What...is that?\""
     "I slowly stood up, with the pain lingers, as I strive to take a closer look at the flickering light."
+    scene shack_bg with fade
     P "\"Is that a shack?\""
     "I move forward towards the light, and what stood upon me was an old, rusty shack."
     P "\"Looks abandoned...Is anyone there?\""
