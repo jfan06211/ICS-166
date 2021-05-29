@@ -47,7 +47,7 @@ label start:
     P "\"W-haaa!!\""
     "I'm in my room...?"
     unknown "\"Jeez, I thought you would never wake up. It’s morning y’know?\""
-    play music "audio/audio_daytimetheme.mp3"
+    play music "audio/daytimetheme.mp3"
     show lyra normal with dissolve
     P "\"Lyra...\""
     "Oh right...That was a dream."
@@ -113,14 +113,14 @@ label start:
     "I put away my plate into the automatic cleaning sink, and head back to my room."
     stop music fadeout 1.0
     scene bedroomchangenightlight with Fade(0.5,2.0,0.5)
-    play music "audio/audio_night_theme.mp3"
+    play music "audio/night_theme.mp3"
     "It is now 8:30pm in the evening as I call off my job's meeting and shut down my computer."
     "Thinking about nothing, I laid down on my bed."
     P "\"That meeting was longer than I thought...Looks like it will be a busy day tomorrow working on that new website for my client.\""
     "Hmm..."
     P "\"Maybe a little jog wouldn't hurt to keep my blood flowing.\""
     "I stood up to get a hoodie in my closet before heading outside"
-    play sound "audio/audio_doorOpened.mp3"
+    play sound "audio/doorOpened.mp3"
     scene bedroomchangenight
     scene nightsky with Fade(0.5,2.0,0.5)
     "The night sky was still, and the light from the moon shines down the trail as I jog."
@@ -128,24 +128,24 @@ label start:
     P "\"Wait a minute.\""
     "In the corner of my eye, I saw a faint shimmer of light deep within the hills."
     P "\"What is that...?\""
-    play sound "audio/audio_hover_over.mp3"
+    play sound "audio/hover_over.mp3"
     "A loud engine starts hovering behind me."
     P "\"What's that soun-\""
     menu:
         "Turn around":
-            play sound "audio/audio_hover_over.mp3"
+            play sound "audio/hover_over.mp3"
             "As I turned to look back, a truck flew over me at high velocity."
             "Its generated wind blew at me with full force."
             jump Ch1_continue
         "Keep running":
             "...Maybe it's nothing."
-            play sound "audio/audio_hover_over.mp3"
+            play sound "audio/hover_over.mp3"
             "A truck flew over me at high velocity."
             "Its generated wind blew at me with full force."
             jump Ch1_continue
         "Stop":
             "I halted my jog and turned to where the sound came from."
-            play sound "audio/audio_hover_over.mp3"
+            play sound "audio/hover_over.mp3"
             "To my surprise, a huge truck flew over me with great velocity."
             "Its generated wind blew at me with full force."
             "Taken by surprise, I stepped back."
@@ -158,15 +158,15 @@ label Ch1_continue:
     "My leg slided on a pebble on the edge of the trail."
     P "\"W-woa..h..!!\""
     with vpunch
-    play sound "audio/audio_fallDown.mp3"
+    play sound "audio/fallDown.mp3"
     scene black
     "I tip over the side of the trail, my body swirling in motion as I roll down the slope of the trail into the bottom of the hill."
-    play sound "audio/audio_fallDown.mp3"
+    play sound "audio/fallDown.mp3"
     "Everything is spinning."
-    play sound "audio/audio_fallDown.mp3"
+    play sound "audio/fallDown.mp3"
     with vpunch
     P "\"Argh!\""
-    play music "audio/audio_night_ambience.mp3" fadein 1.0
+    play music "audio/night_ambience.mp3" fadein 1.0
     scene forest with fade
     "My body jolted in pain as I slam myself into a tree."
     "Haven't felt something like this since the incident of me hitting my funny bone on the edge of a sofa."
@@ -176,7 +176,7 @@ label Ch1_continue:
     scene forest_light_flicker with dissolve
     scene forest with dissolve
     P "\"What...is that?\""
-    play sound "audio/audio_leave_rustle.mp3"
+    play sound "audio/leave_rustle.mp3"
     "I slowly stood up, with the pain lingers, as I strive to take a closer look at the flickering light."
     scene shack_bg with fade
     P "\"Is that a shack?\""
@@ -189,7 +189,7 @@ label Ch1_continue:
             "I peeked between the cracks of the door and saw some sort of flickering light emitting from an object."
             jump Ch1_enterShack
         "Knock on the door.":
-            play sound "audio/audio_door_knock.mp3"
+            play sound "audio/door_knock.mp3"
             "I knocked on the door several times."
             P "\"Hm...still no response. I guess it really is abandoned.\""
             jump Ch1_enterShack
@@ -197,7 +197,7 @@ label Ch1_continue:
             jump Ch1_enterShack
 
 label Ch1_enterShack:
-    play sound "audio/audio_doorOpened.mp3"
+    play sound "audio/doorOpened.mp3"
     "I opened the door and walked towards the flickering object."
     P "\"A mirror...?\""
     "I looked inside the mirror and the light grew brighter."
@@ -639,7 +639,7 @@ label chapter4_start:
 
     scene daysky with dissolve
     hide bedroom
-    play music "audio/audio_daytimetheme.mp3" loop
+    play music "audio/daytimetheme.mp3" loop
 
     "I decided to take the mirror to the appeals office located a short walk away from where I lived. I knew how to get there thanks to lessons from when I was younger."
 
@@ -655,7 +655,7 @@ label chapter4_start:
 
     scene appeals with fade
     hide daysky
-    play sound "audio/audio_doorOpened.mp3"
+    play sound "audio/doorOpened.mp3"
 
     "I walked through the front door and immediately noticed the lack of furnishings inside. In my residence, I have a place to sit, stand, or sleep when I wish."
 
