@@ -47,7 +47,7 @@ label start:
     P "\"W-haaa!!\""
     "I'm in my room...?"
     unknown "\"Jeez, I thought you would never wake up. It’s morning y’know?\""
-    play music "audio/daytimetheme.mp3"
+    play music "audio/audio_daytimetheme.mp3"
     show lyra normal with dissolve
     P "\"Lyra...\""
     "Oh right...That was a dream."
@@ -113,14 +113,14 @@ label start:
     "I put away my plate into the automatic cleaning sink, and head back to my room."
     stop music fadeout 1.0
     scene bedroomchangenightlight with Fade(0.5,2.0,0.5)
-    play music "audio/night_theme.mp3"
+    play music "audio/audio_night_theme.mp3"
     "It is now 8:30pm in the evening as I call off my job's meeting and shut down my computer."
     "Thinking about nothing, I laid down on my bed."
     P "\"That meeting was longer than I thought...Looks like it will be a busy day tomorrow working on that new website for my client.\""
     "Hmm..."
     P "\"Maybe a little jog wouldn't hurt to keep my blood flowing.\""
     "I stood up to get a hoodie in my closet before heading outside"
-    play sound "audio/doorOpened.mp3"
+    play sound "audio/audio_doorOpened.mp3"
     scene bedroomchangenight
     scene nightsky with Fade(0.5,2.0,0.5)
     "The night sky was still, and the light from the moon shines down the trail as I jog."
@@ -128,24 +128,24 @@ label start:
     P "\"Wait a minute.\""
     "In the corner of my eye, I saw a faint shimmer of light deep within the hills."
     P "\"What is that...?\""
-    play sound "audio/hover_over.mp3"
+    play sound "audio/audio_hover_over.mp3"
     "A loud engine starts hovering behind me."
     P "\"What's that soun-\""
     menu:
         "Turn around":
-            play sound "audio/hover_over.mp3"
+            play sound "audio/audio_hover_over.mp3"
             "As I turned to look back, a truck flew over me at high velocity."
             "Its generated wind blew at me with full force."
             jump Ch1_continue
         "Keep running":
             "...Maybe it's nothing."
-            play sound "audio/hover_over.mp3"
+            play sound "audio/audio_hover_over.mp3"
             "A truck flew over me at high velocity."
             "Its generated wind blew at me with full force."
             jump Ch1_continue
         "Stop":
             "I halted my jog and turned to where the sound came from."
-            play sound "audio/hover_over.mp3"
+            play sound "audio/audio_hover_over.mp3"
             "To my surprise, a huge truck flew over me with great velocity."
             "Its generated wind blew at me with full force."
             "Taken by surprise, I stepped back."
@@ -158,15 +158,15 @@ label Ch1_continue:
     "My leg slided on a pebble on the edge of the trail."
     P "\"W-woa..h..!!\""
     with vpunch
-    play sound "audio/fallDown.mp3"
+    play sound "audio/audio_fallDown.mp3"
     scene black
     "I tip over the side of the trail, my body swirling in motion as I roll down the slope of the trail into the bottom of the hill."
-    play sound "audio/fallDown.mp3"
+    play sound "audio/audio_fallDown.mp3"
     "Everything is spinning."
-    play sound "audio/fallDown.mp3"
+    play sound "audio/audio_fallDown.mp3"
     with vpunch
     P "\"Argh!\""
-    play music "audio/night_ambience.mp3" fadein 1.0
+    play music "audio/audio_night_ambience.mp3" fadein 1.0
     scene forest with fade
     "My body jolted in pain as I slam myself into a tree."
     "Haven't felt something like this since the incident of me hitting my funny bone on the edge of a sofa."
@@ -176,7 +176,7 @@ label Ch1_continue:
     scene forest_light_flicker with dissolve
     scene forest with dissolve
     P "\"What...is that?\""
-    play sound "audio/leave_rustle.mp3"
+    play sound "audio/audio_leave_rustle.mp3"
     "I slowly stood up, with the pain lingers, as I strive to take a closer look at the flickering light."
     scene shack_bg with fade
     P "\"Is that a shack?\""
@@ -189,7 +189,7 @@ label Ch1_continue:
             "I peeked between the cracks of the door and saw some sort of flickering light emitting from an object."
             jump Ch1_enterShack
         "Knock on the door.":
-            play sound "audio/door_knock.mp3"
+            play sound "audio/audio_door_knock.mp3"
             "I knocked on the door several times."
             P "\"Hm...still no response. I guess it really is abandoned.\""
             jump Ch1_enterShack
@@ -197,7 +197,7 @@ label Ch1_continue:
             jump Ch1_enterShack
 
 label Ch1_enterShack:
-    play sound "audio/doorOpened.mp3"
+    play sound "audio/audio_doorOpened.mp3"
     "I opened the door and walked towards the flickering object."
     P "\"A mirror...?\""
     "I looked inside the mirror and the light grew brighter."
@@ -639,6 +639,7 @@ label chapter4_start:
 
     scene daysky with dissolve
     hide bedroom
+    play music "audio/audio_daytimetheme.mp3" loop
 
     "I decided to take the mirror to the appeals office located a short walk away from where I lived. I knew how to get there thanks to lessons from when I was younger."
 
@@ -654,11 +655,13 @@ label chapter4_start:
 
     scene appeals with fade
     hide daysky
-    play music ominous01 loop
+    play sound "audio/audio_doorOpened.mp3"
 
     "I walked through the front door and immediately noticed the lack of furnishings inside. In my residence, I have a place to sit, stand, or sleep when I wish."
 
     "In this appeals office, there wasn't a single chair to be seen, nor a sign directing me to the appropriate place to report the mirror."
+
+    stop music fadeout 3.0
 
     "It was as if this place was designed never to be used, only seen from the outside."
 
@@ -668,13 +671,20 @@ label chapter4_start:
 
     P "I'd like to ask you about this strange object I found. I've never been here before, and I'm not sure exactly how this process works, but I've brought it here in the hopes that you can help me with it... whatever it is."
 
+    play music ominous01 loop
+
     "I pulled the mirror from my pocket and placed it on the desk, and the person before me almost immediately started breathing heavily. Their eyes widened, their expression changed, and they couldn't say a word for a moment or two."
 
     "At this point, for a brief moment, I saw a familiar look in their eyes. They looked a bit like Ben did when he became hurt."
 
     "After some hesitation, they reached over and pressed a small red button. I heard a click and a high-pitched beep, and then waited for a moment. The person behind the desk still hadn't said anything, but I knew that something wasn't quite right."
 
+    with flash
+    with flash
+
     "Suddenly, a flash of light appeared and dust was swiftly scattered from the surrounding area. After the light was gone, I saw Lyra standing before me."
+
+    show lyra serious at right with moveinright
 
     "She looked at the person behind the desk, looking confused."
 
@@ -682,15 +692,25 @@ label chapter4_start:
 
     "Still refusing to speak, they simply pointed at the mirror I had placed on the desk with that same intense look in their eyes."
 
+    hide lyra serious
+    show lyra surprised at right
+
     "Lyra looked at the mirror, and immediately became still. There was a long pause before she did anything else, as if the mirror had some kind of hold on her."
 
     "After a moment, she looked directly at me, and started speaking in her familiarly polite voice."
 
+    show lyra surprised at center with move
+
     L "Where did you get that mirror?"
+
+    hide lyra surprised
+    show lyra angry3
 
     "I realized how little I'd been posed with questions throughout my life, but also how little I'd asked them. I'd never needed to find an answer. I found myself unable to speak, as if the same force controlling the employee had suddenly been transferred to me."
 
     L "Can you hear me? Hello? Where did this come from?"
+
+    hide lyra angry3
 
 menu:
 
@@ -704,15 +724,20 @@ label chapter4_saynothing:
 
     "I said nothing."
 
+    show lyra angry2 with dissolve
+
     "She picked up the mirror and took a few steps toward me, holding the object in front of my face."
 
     L "At least tell me this... Have you... used this mirror? Did anything happen while it was in your possession?"
 
     "For the first time in my life, I saw the plain, simple smile that Lyra always wore leave her face... replaced by something I could just barely recognize."
 
+    hide lyra angry2
+    show lyra angry3 with vpunch
+
     L "Answer me!"
 
-    "She reminded me of the guide I'd met before. Looking at me with a narrow gaze, asking me something I couldn't quite bring myself to answer, disturbed by my lack of cooperation, and refusing to put up with it for much longer."
+    "She reminded me of Calliope. Looking at me with a narrow gaze, asking me something I couldn't quite bring myself to answer, disturbed by my lack of cooperation, and refusing to put up with it for much longer."
 
     "All I could do was shake my head. The feeling she gave me wasn't pleasant, and I wanted it to be gone quickly."
 
@@ -720,9 +745,13 @@ label chapter4_saynothing:
 
     "After finally getting an answer, she quickly sped up the conversation."
 
+    hide lyra angry3
+
     jump chapter4_end
 
 label chapter4_lie:
+
+    show lyra angry2 with dissolve
 
     P "I... umm... just found it a few minutes ago...I brought it here as soon as I did."
 
@@ -740,17 +769,24 @@ label chapter4_lie:
 
     "After what seemed like an eternity, she finally spoke, and I couldn't describe with words how relieved I was once my hands stopped trembling."
 
+    hide lyra angry2
+
     jump chapter4_end
 
 label chapter4_end:
 
     stop music fadeout 2.0
 
+    show lyra angry1
+
     L "Okay! Well, I'm glad you found my mirror! If you have no further appeals to make, then I'll just take it back with me and send you on your way!"
 
     "Without a moment's notice, Lyra waved her hand in a fluid motion towards me, and now I was the one engulfed in a flash of light."
 
+    hide lyra angry1 with dissolve
+    with flash
     scene bedroom with dissolve
+    with flash
     hide appeals
 
     "After it disappeared, I found myself back in my room once again."
@@ -765,11 +801,13 @@ label chapter4_end:
 
     "Before all of this, I had gone through every day knowing how it would turn out, and never wondered about any other possibilities."
 
-    "But sitting in my room, thinking about Ben, the guide, and Lyra's expressions throughout these events, I knew I wanted more."
+    "But sitting in my room, thinking about Ben, Calliope, and Lyra's expressions throughout these events, I knew I wanted more."
 
-    "I had felt things I liked, and many things I didn't like. But knowing that there could be more, that my guide was still out there, along with all of their associates and enemies, it caused something in me to change."
+    "I had felt things I liked, and many things I didn't like. But knowing that there could be more, that Calliope was still out there, along with all of their associates and enemies, it caused something in me to change."
 
-    "I wanted to see them again."
+    "I needed to know more. More about the things they showed me... more about the way it made me feel..."
+
+    "More about myself."
 
     #Chapter 4 END.
 
