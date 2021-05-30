@@ -63,7 +63,7 @@ label start:
     L "\"Go on ahead and wash your face whenever you're ready.\""
     L "\"I already prepared breakfast, just come to the living room whenever you're hungry!\""
     hide lyra normal with dissolve
-    "Lyra stood up to open the blind next to my bed. A beautiful sunlight shines through the window."
+    "Lyra stood up to open the blinds next to my bed. A beautiful ray of sunlight shines through the window."
     "Ah. Another bright day."
     "As I look out the window, flying cars zoom by the blue sky."
     P "\"Looks like this is going to be another peaceful day.\""
@@ -97,14 +97,14 @@ label start:
     "I’m currently living in a house near Garden Land Trailhead, one of the quietest parts of the city with its famous hiking trails."
     "It’s a one-story house, big enough for 2 residents, but maybe a little too big for one. The best feature of this house is its ability to stay warm throughout the year. Never too cold. Never too hot."
     "Its walls are made with a mixture of cement and pserium, a magical powder developed by the Governmental Laboratory used to maintain stability and give it ideal conditions throughout the season."
-    "We are really living up to the technologies these days."
+    "We are really living it up technologies these days."
     unknown "\"Master, I have finished cleaning duties.\""
     P "\"Hm?\""
     show cleanbot normal with moveinright
     "As I looked to my right to where the voice came from, a tall human-like android stood in front of me dressed in a suit."
     "It's the cleaning bot that was included with this house Lyra gave me a few years back."
     show cleanbot talk
-    cleanBot "\"Do you have any more requests, sir?\""
+    cleanBot "\"Do you have any more requests, Master?\""
     P "\"No, you can rest.\""
     cleanBot "\"Yes, Master.\""
     hide cleanbot talk with dissolve
@@ -114,7 +114,7 @@ label start:
     stop music fadeout 1.0
     scene bedroomchangenightlight with Fade(0.5,2.0,0.5)
     play music "audio/night_theme.mp3"
-    "It is now 8:30pm in the evening as I call off my job's meeting and shut down my computer."
+    "It is now 8:30 in the evening as I call off my job's meeting and shut down my computer."
     "Thinking about nothing, I laid down on my bed."
     P "\"That meeting was longer than I thought...Looks like it will be a busy day tomorrow working on that new website for my client.\""
     "Hmm..."
@@ -123,8 +123,8 @@ label start:
     play sound "audio/doorOpened.mp3"
     scene bedroomchangenight
     scene nightsky with Fade(0.5,2.0,0.5)
-    "The night sky was still, and the light from the moon shines down the trail as I jog."
-    "I keep my breath steady as the cold wind blow against my face with a freezing touch. The heat generated through my enery extertion slowly warms my face up."
+    "The night sky was still, and the light from the moon shone down the trail as I jog."
+    "I kept my breath steady as the cold wind blows against my face with a freezing touch. The heat generated through my energy exertion slowly warms my face up."
     P "\"Wait a minute.\""
     "In the corner of my eye, I saw a faint shimmer of light deep within the hills."
     P "\"What is that...?\""
@@ -155,32 +155,32 @@ label Ch1_continue:
     scene nightsky_truckhover with dissolve
     P "\"Woahh, look at the size of that thing! It’s the newest truck model! That actually looks so coo-\""
     stop music fadeout 1.0
-    "My leg slided on a pebble on the edge of the trail."
+    "My leg slid on a pebble on the edge of the trail."
     P "\"W-woa..h..!!\""
     with vpunch
     play sound "audio/fallDown.mp3"
     scene black
-    "I tip over the side of the trail, my body swirling in motion as I roll down the slope of the trail into the bottom of the hill."
+    "I tipped over the side of the trail, my body swirling in motion as I rolled down the slope of the trail down to the bottom of the hill."
     play sound "audio/fallDown.mp3"
-    "Everything is spinning."
+    "Everything was spinning."
     play sound "audio/fallDown.mp3"
     with vpunch
     P "\"Argh!\""
     play music "audio/night_ambience.mp3" fadein 1.0
     scene forest with fade
-    "My body jolted in pain as I slam myself into a tree."
+    "My body jolted in pain as I slammed myself into a tree."
     "Haven't felt something like this since the incident of me hitting my funny bone on the edge of a sofa."
     "Wasn't fun."
-    P "\"Did I really trip on a rock while sidetracking...\""
+    P "\"Did I really tripped on a rock while sidetracking...\""
     "Well that was an event."
     scene forest_light_flicker with dissolve
     scene forest with dissolve
     P "\"What...is that?\""
     play sound "audio/leave_rustle.mp3"
-    "I slowly stood up, with the pain lingers, as I strive to take a closer look at the flickering light."
+    "I slowly stood up, with the pain lingering, as I strived to take a closer look at the flickering light."
     scene shack_bg with fade
     P "\"Is that a shack?\""
-    "I move forward towards the light, and what stood upon me was an old, rusty shack."
+    "I moved forward towards the light, and what stood upon me was an old, rusty shack."
     P "\"Looks abandoned...Is anyone there?\""
     "...No response."
     P "\"Hm...\""
@@ -208,44 +208,59 @@ label Ch1_enterShack:
 
     #Chapter 2
 label chapter2_start:
-    P "\"What is this thing? It seems like a door that connects to another place. \""
+    P "\"What is this thing?\""
 
-    "\"Let me see if I can push it...\""
+    "Visually, it seemed like an ordinary handheld mirror, but there was something special about it."
+
+    "As I peered through the mirror, it seemed like there was something beyond the reflection."
+
+    P "\"It almost seems like… a door to another place.\""
+
+    "I placed my hand over the mirror, and I was pulled through."
+
     stop music fadeout 1.0
     with flash
     with flash
-    scene bedroomchangeday with flash
+    scene shack_bg with flash
 
     "..."
 
-    "\"What happened? Did I just take a nap? \""
+    "What just happened?"
 
-    "\"Some strong light is shining on my face that I can't open my eyes.\""
-
-    "\"But the light feels so familiar.\""
+    "The moonlight crept through the creaks of the shack."
 
     "......"
     play music "audio/BTR-Ominous-01.mp3" fadein 1.0
 
-    "\"Isn't it the light in my room?!\""
+    "What just happened…?"
 
-    "I try to block the light using my hands and finally I can open my eyes just a little bit."
+    "I stepped outside and took a look around."
 
-    "\"Brown chairs, empty lockers...\" It seems like I am in my room."
+    "The blue mirror... Wait! The mirror!"
 
-    "\"The blue mirror... Wait! The mirror! \""
+    "Did something happen because I touched the mirror?"
 
-    "\"I passed out because I tried to push the mirror! \""
-
-    "I held the bed and got up from the ground."
-
+    "Curious, I walked back to my house."
     stop music fadeout 1.0
+    scene nightsky with fade
 
-    "\"blzzzz blzzzzzz blzzzzzzzz\" The doorbell starts screaming"
+    play music "audio/night_theme.mp3"
+    scene diningroom with dissolve
+    play sound "audio/doorOpened.mp3"
+    "As I stepped in front of my house, I heard movement from within"
 
-    "\"Who is this? I don't remember someone is going to see me at this time.\" I start become curious while I open the door"
-
-    G "\"What's up [Protagonist]! Are you ready for the Champions League Final? We gotta go fast before the seats run out!\""
+    P "\"Who’s in my house? I don't remember inviting anyone over...\""
+    "Oh it must be Lyra! She’s probably over to check up on me. Gotta tell her I was just out on a short jog."
+    "A strange, but familiar figure rushed out as I entered the house."
+    show calliope with vpunch
+    G "\"[Protagonist]...! Is that really you?\""
+    "Lyra...?"
+    play music "audio/BTR-Ominous-01.mp3" fadein 1.0
+    G "\"You’ve been gone for so long! Where have you been?\""
+    P "\"Just...a little jog...\""
+    "Come to think of it, my whole house looks a bit...old? That can’t be right..."
+    G "\"Just a jog? You’ve been gone for days! I’m so glad you’re alright.\""
+    G "\"I’ve been meaning to invite you when you come back, but let’s go to the Frolic Room bar! Let’s watch the gladiator matches!\""
 
 menu:
 
@@ -257,200 +272,299 @@ menu:
 
 label chapter2_confused:
 
-    G "\"How can you forget about this? It is the L.A versus Liverpool! Let's turn those British man down!\""
+    G "\"How can you forget about this? It is L.A versus Hollywood! Let's turn those countrymen down!\""
 
-    P "Oh my god. Am I crazy? How can the L.A be in the Champions League and face Liverpool? They don't even on the same continent."
+    P "Oh my god. Am I crazy? How can the L.A be in the Champions League and face Hollywood? They don’t even have a team."
 
-    "Also, is she Lyra? I don't remember that Lyra is a soccer fan. Unless...Unless this is a different world?"
+    P "\"Yo Lyra, L.A can't fight with Hollywood. They don’t...\""
 
-    G "\"Hey! What are you waiting for? Grab your jacket and let's go! I don't want to stand in the crowd.\""
+    G "\"Who is Lyra? Are you oversleeping? I am Calliope!\""
 
-    P "\"I think I am better not going to the bar since I haven't been to any bar…\""
+    "Calliope…?"
+
+    show calliope with vpunch
+    G "\"Grab your jacket and let's go! I don't want to stand in the crowd.\""
+
+    P "\"I think I better not go to the bar since I haven't been to any bar…\""
 
     G "\"Bro, you should really try some good drinks in the bar. I guarantee you’ll love the place once you get there. \""
 
-    jump chapter2_bar
+    jump chapter2_walk
 
 label chapter2_pretend:
 
     G "\"Don't forget to grab your jacket! It is a little bit cold in the bar. They always set the temperature low. \""
 
-    P "\"Wait are we going to a bar? It there a age limit here?\""
+    P "\"Wait are we going to a bar? Is there an age limit there?\""
 
     G "\"No one cares about the age limit! If you can speak, you are legal to get a drink now. By the way, which team has a better chance to win this time? \""
 
-    P "\"Man City is definitely going to win this time. They have the Premier League already and the final is just another hard battle for Chelsea...\""
+    P "\"Man, City is definitely going to win this time. They have the Premier League already and the final is just another hard battle for Chelsea...\""
 
-    G "\"Wait wait wait...Are you from 2021 or something? It is the year (time holder). It's the L.A versus Liverpool! \""
+    G "\"Wait wait wait...Are you from 2021 or something? It's L.A versus Hollywood! \""
 
-    P "How can the L.A faces Liverpool in Champions League? They are not on the same continent!"
+    P "How can L.A face Hollywood in the Champions League? They don’t even have a team in the league."
 
-    "And if this is year (time holder), am I in a different world? But look at my table, Lyra, the mirror..."
+    "Something feels off...Am I in a different world? But look at my table, Lyra, the mirror..."
 
     G "\"Yo! Stop zoning out! We won't have a place to sit if we are late! \""
+
+    P "\"Sure, Lyra. I’ll be ready in a minute.\""
+
+    G "\"You are really oversleeping. I don’t know who Lyra is. I am Calliope.\""
+
+    jump chapter2_walk
+
+label chapter2_walk:
+    hide calliope with dissolve
+    scene nightsky with fade
+    stop music fadeout 1.0
+    play music "audio/night_theme.mp3"
+
+    P "\"I don't understand... Why are we going to this bar in the first place?\""
+    show calliope at right with dissolve
+    G "\"Did you hit your head while you were out? We're sending Ben in there to grab some supplies for the group.\""
+
+    P "\”The group?\”"
+
+    G "\"Okay [Protagonist], I'm glad you're okay and all, but you seriously need to get it together before we get to the bar!\""
+    show ben normal at left with dissolve
+    B "\"Don't worry Calliope, I'll explain everything to our forgetful friend here. \""
+    show ben normal talk at left with dissolve
+
+    B "\"Calliope, the leader of our little band of misfits, sent you to an outpost to grab some supplies a few days back. You didn't come back, so we sent some of the group to go looking for you. We got worried when we went a few days without hearing from you, and we'd assumed the worst.\""
+
+    "Do these people know who I am? I've never seen them in my life, but they're treating me so kindly..."
+
+    "Wait... \" assumed the worst\"?"
+    show ben smile at left
+    B "\"Anyway, now that you're back, we can go through with our plan to pay the bar a visit and uhh... borrow a few things. But regardless, we're glad you're okay.\""
+    show ben normal at left
+    show calliope at right with vpunch
+    G "\"Yeah, I'm really glad you're safe, [Protagonist]! Ben and I got really worried about you when you didn't show up.\""
+
+    "This \"Calliope\"... she looks exactly like Lyra... but instead of being my personal caretaker... she seems to be the caretaker for this whole \"group\" that everyone keeps mentioning."
+
+    G "\"Anyway, once we get to the bar, you and I will stand by while Ben snags some stuff we could use.\""
+
+    P "\"Why are you taking things from someone else? Don't you have everything you need at your residences?\""
+
+    G "\"I really wish that were the case, buddy. But unfortunately, the people around here don't exactly like to give out treats to those in need. That's why I do my best to look after all of you.\""
 
     jump chapter2_bar
 
 label chapter2_bar:
 
-    N "[Protagonist] and the Guide is on their way to the bar \"Frolic Room\"."
-
-    show ben normal
-
-    B "\"Hey you guys! Are you guys also going to watch the final? \""
-
-    G "\"Oh hi Ben! Are you going too? Would you like to join us? We are going to the Forlic Room! \""
-
-    B "\"Sure! Watching soccer game in the Forlic Room could be cool. Do you guys think the L.A can win this final? \""
-
-    P "\"Based on my experience, Liverpool is going to win easily. They were the champion of the last year. The L.A is just an average team in MLS. They are not going to have any chances. \""
-
-    B "\"Dude, the L.A is not like 500 years ago. I am quite sure the L.A is going to win this because we have best local players in the world. LA players will have incredible power fighting in LA! Liverpool is just a second-rated team in the Europe. They can't even make it to the first four place in the Premier League...\""
-
-    G "\"Time to stop guys. We still have 20 minutes to go. Why don't we silence and see what is going on tonight. \""
-
-    scene bar
+    scene frolic room front door
     with dissolve
 
-    N "[Protagonist], the Guide, and Ben has arrived \"Frolic Room\"."
+    "Calliope, Ben, and I made our way to a bar known as the \"Frolic Room\"."
 
-    "Although they arrived at the bar 10 minutes earlier than the match starts, the seats are already full."
+    show ben serious talk
 
-    "Fans that support the L.A arrived exceptional early. As a result, they occupy ¾ of seats while Liverpool fans can only get about ¼."
+    B "\"Alright, I’m going to head around the back. You guys hang around, don’t look suspicious, and if there’s any trouble I’ll come running.\""
 
-    "People start betting on the bar table. Looks like 70 percent of people think the L.A is going to win."
+    G "\"You don’t get into any trouble either, okay?\""
+    show ben smile
+    B "\"Please, there's not a chance.\""
+    hide ben smile with dissolve
+    "As Ben turned the corner, he pulled his hood up and gave us a quick thumbs up before becoming buried by shadows."
 
-    G "\"Looks like we are late. Ben, can you take [Protagonist] to a spot that we can stand comfortably? I am going to get you some drinks.\""
+    P "\"So, what exactly is a bar? What do people do here?\""
+    show calliope with dissolve
+    G "\"Oh you know… rich folk with nothing to do sitting around, getting drunk, and throwing fists at each other.\""
 
-    B "\"Sure. It would be nice if we have Heineken.\""
+    P "\"Geting drunk?\""
 
-    N "10 minutes later, the match officially starts. The [Protagonist] party watches the game in the middle of the bar."
+    "Calliope turned to me with an amused smile."
 
-    P "\"I am so excited right now. I hope I can watch every match in this bar starting now. The atmosphere is just so good!\""
+    G "\"You really don’t know anything, do you?\""
 
-    G "\"Told ya.\""
+    G "\"Come on. You can just see for yourself.\""
+    hide calliope with dissolve
 
-    N "When the time comes to 35 minutes, Gordon scores with a free kick! It is also the first goal that the L.A scores in Champions Final!"
+    scene frolic room inside
+    with dissolve
 
-    "Fans of the L.A start cheering. They jump up from chairs and begin playing “waves”. On the other side, Liverpool fans don’t expect this goal. They finish their drinks and start asking the bartender for more beer."
+    "When we entered the bar, most of the seats were already taken. Calliope and I managed to find space tucked in the dark corner of the room."
 
-    "One of the Liverpool fan tries to cheer up his companion."
+    "It was very noisy inside, more commotion than I had ever seen or heard in my life."
 
-    LV "\"Hey! It is just a lucky goal for them! I believe we are going to in at the end! Let’s go REDS!\""
+    "People were drinking from large mugs, clanking them on the table, laughing and shouting about a game or something."
+    show calliope with dissolve
+    G "\"See those guys over there?\""
 
-    N "Some of the L.A fans heard Terry’s talk and start laughing."
+    "She nodded towards a group of people near the front of the bar. Their backs were turned to us. They wore long cloaks with dark hoods. They were tossing coins around the table back and forth."
 
-    LB "This is LA! No one can beat the L.A in LA!"
+    show calliope at right with move
+    show lizardmen bandits at left with dissolve
 
-    #some transition is needed
+    "Despite being a very loud bunch, their words were hard to make out. They seemed to speak with some sort of lisp."
 
-    N "Henderson scores for Liverpool just before half time. The score becomes 1-1."
+    "Before I could ask Calliope what was so interesting about them, one turned around to lean against the table."
+    show lizardmen bandits
+    "His skin was covered in green scales, and I finally noticed the long, green tail peeking out from underneath his cloak."
 
-    LV "\"I told you folks. This is the first step to win.\""
+    P "\"What in the world… What happened to him?\""
 
-    N "The L.A fans look unhappy about the score. They discuss the potential foul that happened before Henderson’s shot while the break."
+    G "\"Ha, I figured you\’d be confused, real proof you\’re not from around here. That’s one of the lizardmen bandits. He hangs around the bar pretty often. Just a normal guy like you or me, but obviously covered in scales not skin. And there’s something else.\""
 
-    G "\"I think the L.A players did a good job in the first half. The manager might need to consider placing one more mid field player to increase the possession.\""
+    G "\"Lizardmen, and any half-beast person, can use magic.\""
 
-    B "\"Nah. We need to substitute forward players at around 60 minutes. The startups look a little bit tired.\""
+    P "\"Whaa.. Magic?\""
 
-    P "\"Liverpool is going to win if they keep playing this counterattack strategy.\""
+    G "\"Yup, real bonafide magic. It can be real dangerous too, so you have to be careful.\""
 
-    LB "\"Hey! You! Little Guy! Stop talking that loser “Liverpoor”! They are not going to beat us! No matter what strategy they are using!\""
+    "Part of me wanted to see this magic right away, and another part of me knew to heed Calliope’s warning."
+    hide calliope with dissolve
+    hide lizardmen bandits
 
-    G "\"[Protagonist], they are the gang that controls almost all bars. Let’s just shut up and wait for the second half.\""
+    with fade
 
-    P "Hmm. Then it is not surprise that they always talk like that. "
+    "The second half has started. L.A chose to replace one of their fighters with a big, heavy-weapon wielder so they can give enough pressure to Hollywood. In the meantime, Hollywood didn’t make any changes. It seemed like their faction leader was pretty satisfied with the current fighter."
 
-    # some transition is needed
+    "After another 45 minutes, the score is still 1-1. In the last attack, Hollywood had its corner. It might be the last chance for Hollywood to end the game here."
 
-    N "The second half has started. The L.A choose to replace one of their Midfielder with a Forward to ensure they give enough pressure to Liverpool. At the meantime, Liverpool doesn’t make any changes. It seems like their manager is pretty satisfied with the startups."
+    "Almost everyone in the bar stood up and stared at the screen. Some of the Hollywood fans were so nervous that they turned their faces away and started praying."
 
-    N "After another 45 minutes, the score is still 1-1. In the last attack, Liverpool has its corner. It might be the last chance for Liverpool to end the game here."
+    "Headshot! Hollywood has scored! Hollywood fighter, Alison, gave a powerful swing and sent the L.A fighter’s head flying!"
 
-    N "Almost everyone in the bar stands up and staring at the screen. Some of the Liverpool fans are so nervous that they turn their face backward and start praying."
+    "Hollywood fans started cheering. Although they only occupied a quarter of the bar, the noise they created roared throughout the bar room"
 
-    "Goalkeeper Alison from Liverpool side ran across the whole field and see if he can do something in this final attack."
+    show terry with dissolve
 
-    "The referee blows the whistle. The ball is now flying to the penalty area…"
+    LV "\"YES!!!!! We are the champion folks! This is our 7th Champions League title! I've waited for so many years!\""
 
-    "GOALLLLLLLLLLLLLL! Liverpool has scored! Alison gave a powerful header and sent the ball into the net!"
+    "On the other hand, all L.A fans were stunned. Some of them use their hands to cover their face. They still couldn't believe this happened."
 
-    "Liverpool fans starts cheering. Although they only occupied 1/4 of the bar, the noise they create can actually lift the roof."
+    show terry at right with move
+    show lizardmen bandits at left with dissolve
+    with hpunch
 
-    LV "\"YES!!!!!We are the champion folks! This is our 7th Champions League title! I've waited for so many years!\""
+    LB "\"This is not fair! The L.A can't lose! The L.A fighter must’ve been poisoned! They let Hollywood win so that they can put millions of dollars into their pocket! They do this every year! The Champions League is all fake...\""
 
-    N "On the other hand, all L.A fans are stunned. Some of them use hands to cover their face. They still can't believe this happened."
+    LV "\"Yo calm down guys. Just admit the loss.\""
 
-    LB "\"This is not fair! The L.A can't lose! It must be the referee! They let Liverpool win so that they can put millions of dollars into their pocket! They do this every year! The Champions League is all fake...\""
+    stop music fadeout 1.0
 
-    LV "\"Yo calm down guys. You guys did great tonight. It is just us being lucky.\""
-    #Some bad words are coming out
-    LB "\"Shut up, you British pig! You are saying this because Liverpool wins. Just get out of this place! We are not happy to see you! Ugly  Red fans!\""
+    LB "\"Shut up, you British pig! You are saying this because Hollywood won. Just get out of this place! We are not happy to see you! Ugly Red fans!\""
 
-    LV "\"This is not nice. How about you get off this bar, loser?\""
+    LV "\"You got a problem? How about you get off this bar, loser?\""
 
-    LB "\"How dare you! You want a fight? Let's fight!\""
+    play music "audio/BTR-Ominous-01.mp3" fadein 1.0
 
-    G "\"Damn. This is not good. We have better leave.\""
+    LB "\"How dare you! You want a fight?\""
 
-    B "\"Yeah. Let's finish our drink fast and go.\""
+    hide terry with dissolve
+    hide lizardmen bandits with dissolve
 
-    P "\"What? Are we leaving now? This fight haven't begun, yet! Don' worry too much. It should be just a normal bar fight.\""
+    show calliope with dissolve
+    G "\"Damn. This is not good. We'd better leave.\""
 
-    G "\"No no no. Bar fights are not the normal fight you see on TVs. This is the part you don't want to experience.\""
+    "Suddenly, a loud voice spoke up over the rest of the room."
 
-    "\"Let's just go before we can't.\""
+    hide calliope with dissolve
+    show lizardmen bandits with vpunch
 
-    N "More and more drunk people heard there is a fight in Frolic Room and trying to squeeze in to see what happened."
+    LB "\"Hey! Watcha got there? A little present for me?\""
 
-    B "\"I think we are late. There is no way out now. All of the exits are blocked by crowd. We have better start moving to one of the exits can see if we can go through them.\""
+    "One of the lizardmen bandits were bellowing at someone, but we couldn’t see them from our corner of the room."
 
-    P "\"Don't think too much. It is just a fight after match. Just enjoy it.\""
+    LB "Come on, little guy, you know better than to mess around with us."
 
-    G "\"Let's hope it is a normal fight...\""
+    G "\"Oh no… is that…\""
 
-    N "Before the Guide finish his words, a giant fire ball pass by and burn the TV out on the wall."
+    "Two of the lizardmen walked over to the ‘little guy’ and shoved him towards the middle of the bar."
+
+    "As he stumbled into the middle of the room, his red hair came into view."
+
+    show lizardmen bandits at left with move
+
+    show ben serious at right with dissolve
+
+    "It was Ben, caught red-handed, still clutching a bag presumably full of food and drinks."
+
+    LB "\"Alright little guy, hand over the bag and we’ll try not to kill you.\""
+
+    hide lizardmen bandits with dissolve
+    hide ben serious with dissolve
+
+    show calliope with dissolve
+    with hpunch
+
+    G "\"Crap… we need to get him out and fast. Stay here. Lay low and don’t do anything stupid.\""
+
+    P "\"Let me help!\""
+
+    G "\"No no no. Bar fights are not the normal fights you see on TVs. This is the part you don't want to experience. Just STAY THERE!\""
+
+    hide calliope with dissolve
+
+    "More and more drunk people heard that there was a fight in the Frolic Room and tried to squeeze in to see what happened."
+
+    "Calliope managed to pick up Ben and ran out away from Terry and the two lizardmen"
+    show ben serious talk at left with dissolve
+    show calliope at right with dissolve
+    B "\"We're too late. There is no way out now. All of the exits are blocked by crowds. We'd better start moving to one of the exits and see if we can get through them.\""
+
+    G "\"They’re going to chase us. We need to get a move o-\""
+    scene frolic room inside with vpunch
+    "Before Lyra finished her words, a giant fireball passed by and burnt the TV on the wall."
 
     P "\"Woah. What is that?\""
-
+    show ben serious talk with dissolve
     B "\"Looks like the fire ball is from the Fire Lizard.\""
 
-    P "Lizard? Isn’t Lizard a kind of animal? How does it relate to fire?"
+    P "\"Lizard? Isn’t Lizard a kind of animal? How does it relate to fire?\""
+    hide ben serious talk with dissolve
 
     "Let me get closer and see…"
-
-    N "While the [Protagonist] is getting closer to the fighting stage, an ice arrow comes out of nowhere and pierces the wall."
-
+    show frolic room inside with hpunch
+    "While I got closer to the fighting stage, an ice arrow came out of nowhere and pierced the wall."
+    show calliope at right with vpunch
     G "\"Yo [Protagonist]! Stop moving backwards!\""
+    hide calliope with dissolve
 
-    N "[Protagonist] didn’t hear the Guide because the crowd is getting crazy. Everyone is cheering for the fighters and some friends of Lizardmen Bandits is sniping Terry so that they can win the fight."
+    "I didn’t hear Calliope because the crowd was getting crazy. Everyone was cheering for the fighters and some friends of Lizardmen Bandits were sniping Terry so that they could win the fight."
 
-    "As [Protagonist] moving, he finds out that the ice arrow is from a semi-transparent frog. "
+    "As I was moving, I found out that the ice arrow is from a semi-transparent frog. "
 
-    P "Wow, I have never seen animals like this. They seem like the minions from movies."
-
+    P "Wow, I have never seen animals like this."
+    show lizardmen bandits at left with dissolve
+    show terry at right with dissolve
+    show lizardmen bandits at left with vpunch
     LB "\"I like your minion. It looks strong. But I am going to kill you and it will be mine! Hahahahahaha…\""
 
     LV "\"Don’t ever think about it, loser. \""
+    show terry at right with hpunch
+    show lizardmen bandits at left with hpunch
 
-    N "Suddenly, someone from crowd throws a flash bang and [Protagonist] can’t see anything."
+    with flash
+    with flash
+    hide terry
+    hide lizardmen bandits
+    "Suddenly, someone from the crowd threw a flash bang and I couldn’t see anything."
 
-    "After [Protagonist] open his eyes, the fight has already started."
+    "After I opened my eyes, the fight had already started."
 
-    "Lizardmen Bandits and Terry is fighting in the middle of the bar while their minions are also fighting using their magic power. They use whatever is near them to attack and defense."
+    "Lizardmen Bandits and Terry were fighting in the middle of the bar while their minions were also fighting using their magic power. They use whatever is near them to attack and defend."
 
     "The bar is completely in chaos. Chairs, knives, and bottles are flying in the Frolic Room."
 
-    "Suddenly, someone catches [Protagonist]’s arm and trying to drag him out of the frontline."
+    "Suddenly, someone caught my arm and tried to drag me out of the frontline."
+
+    show ben serious with move
 
     P "\"It’s you, Ben! I’ve never seen a fight like this! They are so cool!\""
 
     B "\"Yes they are. But we need to leave. It is unsafe here…\""
 
-    N "While Ben is trying to convince [Protagonist], a stone-made arrow launches and pierces Ben’s body. "
+    "While Ben was trying to convince me, a stone-made arrow launched and pierced Ben’s body."
+    with hpunch
+    stop music fadeout 2.0
 
     #Chapter 2 Ends
+
 
     #Chapter 3 Begins
 label chapter3_start:
