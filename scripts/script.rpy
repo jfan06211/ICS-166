@@ -18,6 +18,7 @@ define LV = Character("Terry")
 #music definition
 
 define audio.ominous01 = "audio/BTR-Ominous-01.mp3"
+define audio.ominous02 = "audio/BTR-Ominous-02.mp3"
 
 # Custom transitions
 define flash = Fade(0.1, 0.0, 0.5, color="#fff")
@@ -47,7 +48,7 @@ label start:
     P "\"W-haaa!!\""
     "I'm in my room...?"
     unknown "\"Jeez, I thought you would never wake up. It’s morning y’know?\""
-    play music "audio/daytimetheme.mp3"
+    play music "audio/daytimetheme.mp3" volume 0.8
     show lyra normal with dissolve
     P "\"Lyra...\""
     "Oh right...That was a dream."
@@ -128,24 +129,24 @@ label start:
     P "\"Wait a minute.\""
     "In the corner of my eye, I saw a faint shimmer of light deep within the hills."
     P "\"What is that...?\""
-    play sound "audio/hover_over.mp3"
+    play sound "audio/hover_over.mp3" volume 0.8
     "A loud engine starts hovering behind me."
     P "\"What's that soun-\""
     menu:
         "Turn around":
-            play sound "audio/hover_over.mp3"
+            play sound "audio/hover_over.mp3" volume 0.8
             "As I turned to look back, a truck flew over me at high velocity."
             "Its generated wind blew at me with full force."
             jump Ch1_continue
         "Keep running":
             "...Maybe it's nothing."
-            play sound "audio/hover_over.mp3"
+            play sound "audio/hover_over.mp3" volume 0.8
             "A truck flew over me at high velocity."
             "Its generated wind blew at me with full force."
             jump Ch1_continue
         "Stop":
             "I halted my jog and turned to where the sound came from."
-            play sound "audio/hover_over.mp3"
+            play sound "audio/hover_over.mp3" volume 0.8
             "To my surprise, a huge truck flew over me with great velocity."
             "Its generated wind blew at me with full force."
             "Taken by surprise, I stepped back."
@@ -166,7 +167,7 @@ label Ch1_continue:
     play sound "audio/fallDown.mp3"
     with vpunch
     P "\"Argh!\""
-    play music "audio/night_ambience.mp3" fadein 1.0
+    play music "audio/night_ambience.mp3" fadein 1.0 volume 0.8
     scene forest with fade
     "My body jolted in pain as I slammed myself into a tree."
     "Haven't felt something like this since the incident of me hitting my funny bone on the edge of a sofa."
@@ -176,7 +177,7 @@ label Ch1_continue:
     scene forest_light_flicker with dissolve
     scene forest with dissolve
     P "\"What...is that?\""
-    play sound "audio/leave_rustle.mp3"
+    play sound "audio/leave_rustle.mp3" volume 0.8
     "I slowly stood up, with the pain lingering, as I strived to take a closer look at the flickering light."
     scene shack_bg with fade
     P "\"Is that a shack?\""
@@ -451,7 +452,7 @@ label chapter2_bar:
 
     LV "\"You got a problem? How about you get off this bar, loser?\""
 
-    play music "audio/BTR-Ominous-01.mp3" fadein 1.0
+    play music "audio/BTR-Ominous-01.mp3" fadein 1.0 volume 0.8
 
     LB "\"How dare you! You want a fight?\""
 
@@ -753,7 +754,7 @@ label chapter4_start:
 
     scene daysky with dissolve
     hide bedroom
-    play music "audio/daytimetheme.mp3" loop
+    play music "audio/daytimetheme.mp3" loop volume 0.7
 
     "I decided to take the mirror to the appeals office located a short walk away from where I lived. I knew how to get there thanks to lessons from when I was younger."
 
@@ -785,7 +786,7 @@ label chapter4_start:
 
     P "I'd like to ask you about this strange object I found. I've never been here before, and I'm not sure exactly how this process works, but I've brought it here in the hopes that you can help me with it... whatever it is."
 
-    play music ominous01 loop
+    play music ominous01 loop volume 0.8
 
     "I pulled the mirror from my pocket and placed it on the desk, and the person before me almost immediately started breathing heavily. Their eyes widened, their expression changed, and they couldn't say a word for a moment or two."
 
@@ -924,6 +925,121 @@ label chapter4_end:
     "More about myself."
 
     #Chapter 4 END.
+
+
+
+    #Chapter 5
+label chapter5_start:
+    scene black with fade
+    "... ... ..."
+    "The sun had set a while ago but that didn’t deter me."
+    play music "audio/night_theme.mp3" loop volume 0.85
+    scene firstscene with fade
+
+
+
+    "Walking with no clear direction or goal, and with no leads to follow up on, I eventually found myself walking a familiar dirt path."
+    "Looking up, I saw the rusty shack from what seemed to be a lifetime ago."
+    scene shack_bg with dissolve
+    "With a hint of melancholy nostalgia, I opened the door and went inside."
+    "Something was immediately off however."
+    "What was once a dimly lit shack was now lit with a faint light blue glow."
+    scene glowingblue with dissolve
+    "There was no primary source."
+    "Instead, it appeared to be a trail of some sort of light, snaking its way out of the shack, and pulsing occasionally."
+
+    scene shack_bg with dissolve
+    "There was no way I had missed this before. Perhaps it had always been here, and only after my experience with the mirror had I been attuned to it."
+    "Magical residue perhaps?"
+    scene black with fade
+    "I felt a small flicker of hope. This was the lead I had been searching for!"
+    scene trail with fade
+    "Without hesitation, I followed the trail out of the shack, and into the night."
+    scene black
+    "Unbeknownst to me, a dark figure slipped out from the treeline."
+    show resize at right with moveinright
+    unknown "(Radio Static) Check in Dispatch ... ... Target … … walking … … will pursue … ..."
+    hide resize with moveoutright
+    "..."
+    "... ..."
+    "... ... ..."
+    "It must have been at least midnight. With no phone, and fatigue beginning to set in, I had lost track of how long I had been walking. I could barely see 10 feet ahead of me."
+    "Without warning, a giant rock face loomed out of the dark at me."
+    scene rockwall with fade
+    "The magic trail went straight into a narrow entrance in the rock. Not too small to squeeze through, but small enough for only one person at a time."
+
+menu:
+    "Climb In":
+        jump endchoice
+
+    "Don't Enter":
+        "I was reluctant to enter. Dark, tight spaces aren’t the most pleasant experiences. But... what choice did I have?"
+        jump endchoice
+label endchoice:
+    scene firstcave with fade
+    play music ominous01 loop volume 0.3 fadeout 1.0 fadein 1.0
+    "I followed the only path available, walking and climbing constantly downwards."
+    "Occasionally, I would come to branching paths. Without my guiding light, I would have been hopelessly lost in the labyrinth of subterranean corridors."
+    "What is this place?"
+    "The uncomfortable feeling I had since entering underground was growing, but now I was sure it wasn’t just in my head."
+    "There was something intangible in the air."
+    "A buzz? Almost like electricity crackling through the air."
+    "I could feel the hairs rising on my neck and arms. Something was down here, and it exuded power."
+
+    scene secondcave with dissolve
+    "The corridor opened up into a larger clearing. For the first time, I could hear a deep humming noise, coming from even deeper."
+    "The air felt even more restrictive now, like it was slightly pushing me away from whatever was down here."
+    scene black with dissolve
+    show doors2 with fade
+
+    "Before me lay a pair of colossal doors, stretching from the ground into the darkness of the ceiling."
+    "The sheer size made me dizzy looking up at it."
+
+    P "How am I supposed to move something like this?"
+menu:
+    "Test Your Strength":
+        "Bracing against the doors, I pushed with everything I had."
+        "Nothing."
+        "The doors pulsed a magical neon red, as if it disapproved."
+        "It was like trying to move a mountain."
+        "With no other option, I tried again. And again. And again."
+        "I sank to the ground, sweating and breathing hard, defeated."
+        "Then, the faintest sound of sliding stone. I looked up."
+        "The doors had slightly opened, not very much at all, but almost as if in respect to the effort I had given."
+        "One more time, I stood up and placed my hands against the stone."
+        "It was still incredibly heavy, but not as daunting as before and after considerable effort..."
+        scene doors with fade
+        "...the doors opened enough to move through."
+        jump enddoorchoice
+
+    "Ask Politely For Them To Open":
+        "I walked up to the unfathomably large doors."
+        "No way was I able to get through this with physical effort."
+        "There must be a trick to it."
+        P "Hello? Could you open up please?"
+        "The doors pulsed a magical blue, as if acknowledging my strategy of not trying to muscle it open."
+        scene doors with fade
+        "The doors slowly and smoothly opened."
+        jump enddoorchoice
+label enddoorchoice:
+    "The path opened up to a large cavern."
+    scene finalcave with dissolve
+    stop music fadeout 1.0
+
+    "The deep humming was very audible at this point. It reminded me of the now-archaic nuclear engines commonly used long ago."
+    play music "audio/A Better Place [wav].wav" fadein 3.0 volume 0.5
+    "Directly across from me, was another mirror."
+
+    "Almost exact in design to the one I had confiscated from me, but scaled a thousand times larger."
+
+    "My clothes gently swayed as if in a breeze, but there was no air current this deep down."
+    "The magical blue hue of the mirror lit up the cave with a beautiful glow."
+
+    "This was it. This was what the magic trail had been leading to."
+    stop music fadeout 2.0
+    #Chapter 5 END
+
+
 
 
 
