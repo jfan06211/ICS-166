@@ -560,15 +560,19 @@ label chapter2_bar:
 
     B "\"Yes they are. But we need to leave. It is unsafe here…\""
 
+    stop music fadeout 1.0
+
     "While Ben was trying to convince me, a stone-made arrow launched and pierced Ben’s body."
     with hpunch
-    stop music fadeout 2.0
-
+    
     #Chapter 2 Ends
 
-
     #Chapter 3 Begins
+    play music audio.ominous02 fadein 5.0 volume 0.8
 label chapter3_start:
+
+    hide ben
+
     "I couldn’t stop staring at Ben. He was a complete mess, but it went beyond his usual dirt-filled attire."
 
     "He had collapsed on the floor. His tanned clothes were now stained red. His tousled hair was drenched in sweat. The arrow still pierced through his body."
@@ -589,6 +593,7 @@ menu:
         jump ch3_talk_to_ben
 
 label ch3_con_to_stare:
+    show calliope at right with vpunch
     G "What the hell are you standing around for?!"
 
     P "Huh? I just -"
@@ -596,6 +601,7 @@ label ch3_con_to_stare:
     jump ch3_endchoice1
 
 label ch3_arrow:
+    show calliope at right with vpunch
     G "Stop that! Let me handle it."
 
     P "Oh, sorry, I just-"
@@ -607,26 +613,30 @@ label ch3_talk_to_ben:
 
     "There was no response. Ben didn't even look at me."
 
+    show calliope at right with vpunch
     G "[Protagonist], what are you doing?!"
 
     P "Huh? I was just -"
+
 
 label ch3_endchoice1:
     G "Nevermind that. Help me get him out of here."
 
     "Calliope grabbed Ben by the shoulders, and I grabbed him by the legs. He was much lighter than I expected."
 
-    # ADD BLACK SCENE TRANSITION HERE
+    scene black with fade
 
     "We took Ben and left the bar quickly and quietly. We looked for a quiet, open space, and finally ducked behind an alley a couple of buildings away."
 
-    # ADD NEW SCENE HERE
+    scene alley_night with fade
 
     "We laid Ben down on the pavement. I thought about how uncomfortable the cold, hard ground must be, but Ben didn’t seem to notice."
 
     "Calliope swung her bag out from around her shoulders and placed it on the floor. From the bag she took out a long, ragged piece of cloth."
 
     "I watched as she carefully removed the arrow from Ben’s body, and then wrapped the cloth around Ben’s stomach. Then, she took out a plastic canteen and held it to his lips."
+
+    show calliope at left
 
     G "Come on Ben, you’ll be alright. Everything will be okay. Stay with me now."
 
@@ -730,8 +740,10 @@ label ch3_fine_ill_leave_3:
 label ch3_endchoice3:
     "There was only one thing to do. It seemed my journey in this world was done now. There was no point in staying around."
 
-    # ADD BLACK SCREEN TRANSITION HERE
-    "It was a quiet, lonely walk back to the mirror."
+    scene black with fade
+    stop music fadeout 2.0
+
+    "I returned through the mirror, and it was a quiet, lonely walk back home."
 
     # End of Chapter 3
 
