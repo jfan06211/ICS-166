@@ -253,7 +253,7 @@ label chapter2_start:
     P "\"Who’s in my house? I don't remember inviting anyone over...\""
     "Oh it must be Lyra! She’s probably over to check up on me. Gotta tell her I was just out on a short jog."
     "A strange, but familiar figure rushed out as I entered the house."
-    show calliope with vpunch
+    show calliope shocked with vpunch
     L "\"[Protagonist]...! Is that really you?\""
     "Lyra...?"
     play music "audio/BTR-Ominous-01.mp3" fadein 1.0
@@ -278,6 +278,7 @@ menu:
         P '"When I touched it, there were these flashes of blinding light."'
         P '"And now I\'m here."'
         P '"Everything feels a bit off... Even you..."'
+        jump ch2_jogchoice_end
 
 label ch2_jogchoice_end:
     P '"Are you really Lyra?"'
@@ -285,85 +286,43 @@ label ch2_jogchoice_end:
     P '"You\'re not Lyra?"'
     L '"Do you not even remember my name, [Protagonist]? I\'m Calliope."'
     G '"Ever since your sorry butt went missing, I\'ve been putting the group\'s survival on my back."'
-    G '"Ever since your sorry butt went missing, I\'ve been putting the group\'s survival on my back."'
-    G '"We had that whole plan figured out and ready to go, and then you went missing!"'
-    G "\"I’ve been meaning to invite you when you come back, but let’s go to the Frolic Room bar! Let’s watch the gladiator matches!\""
+    G '"It\'s my job to take care of your guys and when you went missing, I felt like I\'d failed."'
+    G '"We had that whole plan figured out and ready to go, and then you disappeared!"'
+    P '"What plan?"'
+    G '"The plan was for you, Ben, and me to go to the Frolic Room Bar to restock on supplies."'
+    P '"Supplies?"'
+    G '"Here, I\'m going to call Ben now that you\'re back, so we can continue the plan."'
+    scene black with fade
 
-
-label chapter2_confused:
-
-    G "\"How can you forget about this? It is L.A versus Hollywood! Let's turn those countrymen down!\""
-
-    P "Oh my god. Am I crazy? How can the L.A be in the Champions League and face Hollywood? They don’t even have a team."
-
-    P "\"Yo Lyra, L.A can't fight with Hollywood. They don’t...\""
-
-    G "\"Who is Lyra? Are you oversleeping? I am Calliope!\""
-
-    "Calliope…?"
-
-    show calliope with vpunch
-    G "\"Grab your jacket and let's go! I don't want to stand in the crowd.\""
-
-    P "\"I think I better not go to the bar since I haven't been to any bar…\""
-
-    G "\"Bro, you should really try some good drinks in the bar. I guarantee you’ll love the place once you get there. \""
-
-    jump chapter2_walk
-
-label chapter2_pretend:
-
-    G "\"Don't forget to grab your jacket! It is a little bit cold in the bar. They always set the temperature low. \""
-
-    P "\"Wait are we going to a bar? Is there an age limit there?\""
-
-    G "\"No one cares about the age limit! If you can speak, you are legal to get a drink now. By the way, which team has a better chance to win this time? \""
-
-    P "\"Man, City is definitely going to win this time. They have the Premier League already and the final is just another hard battle for Chelsea...\""
-
-    G "\"Wait wait wait...Are you from 2021 or something? It's L.A versus Hollywood! \""
-
-    P "How can L.A face Hollywood in the Champions League? They don’t even have a team in the league."
-
-    "Something feels off...Am I in a different world? But look at my table, Lyra, the mirror..."
-
-    G "\"Yo! Stop zoning out! We won't have a place to sit if we are late! \""
-
-    P "\"Sure, Lyra. I’ll be ready in a minute.\""
-
-    G "\"You are really oversleeping. I don’t know who Lyra is. I am Calliope.\""
-
-    jump chapter2_walk
-
-label chapter2_walk:
     hide calliope with dissolve
     scene nightsky with fade
     stop music fadeout 1.0
     play music "audio/night_theme.mp3"
 
-    P "\"I don't understand... Why are we going to this bar in the first place?\""
+    P "\"I don't understand... Why are we going to this bar again? Supplies for who?\""
     show calliope at right with dissolve
     G "\"Did you hit your head while you were out? We're sending Ben in there to grab some supplies for the group.\""
 
-    P "\”The group?\”"
+    P "\"The group?\""
 
     G "\"Okay [Protagonist], I'm glad you're okay and all, but you seriously need to get it together before we get to the bar!\""
     show ben normal at left with dissolve
-    B "\"Don't worry Calliope, I'll explain everything to our forgetful friend here. \""
+    B "\"Don't worry Calliope, I'll explain everything to our forgetful friend here. Things must've happened when [Protagonist] was gone.\""
     show ben normal talk at left with dissolve
+
+    "I'm guessing this Ben guy is a close friend of ours. He seems nice, but..."
 
     B "\"Calliope, the leader of our little band of misfits, sent you to an outpost to grab some supplies a few days back. You didn't come back, so we sent some of the group to go looking for you. We got worried when we went a few days without hearing from you, and we'd assumed the worst.\""
 
     "Do these people know who I am? I've never seen them in my life, but they're treating me so kindly..."
 
-    "Wait... \" assumed the worst\"?"
+    "Wait... \"assumed the worst\"?"
     show ben smile at left
     B "\"Anyway, now that you're back, we can go through with our plan to pay the bar a visit and uhh... borrow a few things. But regardless, we're glad you're okay.\""
     show ben normal at left
     show calliope at right with vpunch
-    G "\"Yeah, I'm really glad you're safe, [Protagonist]! Ben and I got really worried about you when you didn't show up.\""
 
-    "This \"Calliope\"... she looks exactly like Lyra... but instead of being my personal caretaker... she seems to be the caretaker for this whole \"group\" that everyone keeps mentioning."
+    "This \"Calliope\"... she looks exactly like Lyra... but instead of being my personal caretaker... she seems to be the caretaker for this whole \"group\" thing that was mentioned."
 
     G "\"Anyway, once we get to the bar, you and I will stand by while Ben snags some stuff we could use.\""
 
@@ -397,11 +356,11 @@ label chapter2_bar:
     P "\"Geting drunk?\""
 
     "Calliope turned to me with an amused smile."
-
+    show calliope normal
     G "\"You really don’t know anything, do you?\""
 
     G "\"Come on. You can just see for yourself.\""
-    hide calliope with dissolve
+    hide calliope normal with dissolve
 
     scene frolic room inside
     with dissolve
@@ -411,12 +370,12 @@ label chapter2_bar:
     "It was very noisy inside, more commotion than I had ever seen or heard in my life."
 
     "People were drinking from large mugs, clanking them on the table, laughing and shouting about a game or something."
-    show calliope with dissolve
+    show calliope serious with dissolve
     G "\"See those guys over there?\""
 
     "She nodded towards a group of people near the front of the bar. Their backs were turned to us. They wore long cloaks with dark hoods. They were tossing coins around the table back and forth."
 
-    show calliope at right with move
+    show calliope serious at right with move
     show lizardmen bandits at left with dissolve
 
     "Despite being a very loud bunch, their words were hard to make out. They seemed to speak with some sort of lisp."
@@ -427,7 +386,7 @@ label chapter2_bar:
 
     P "\"What in the world… What happened to him?\""
 
-    G "\"Ha, I figured you\’d be confused, real proof you\’re not from around here. That’s one of the lizardmen bandits. He hangs around the bar pretty often. Just a normal guy like you or me, but obviously covered in scales not skin. And there’s something else.\""
+    G "\"That’s one of the lizardmen bandits. He hangs around the bar pretty often. Just a normal guy like you or me, but obviously covered in scales not skin. And there’s something else.\""
 
     G "\"Lizardmen, and any half-beast person, can use magic.\""
 
@@ -436,24 +395,22 @@ label chapter2_bar:
     G "\"Yup, real bonafide magic. It can be real dangerous too, so you have to be careful.\""
 
     "Part of me wanted to see this magic right away, and another part of me knew to heed Calliope’s warning."
-    hide calliope with dissolve
+    hide calliope serious with dissolve
     hide lizardmen bandits
 
     with fade
 
-    "The second half has started. L.A chose to replace one of their fighters with a big, heavy-weapon wielder so they can give enough pressure to Hollywood. In the meantime, Hollywood didn’t make any changes. It seemed like their faction leader was pretty satisfied with the current fighter."
+    "The second half of what seems to be a gladiator fight has started on the television. One of the team, the L.A, chose to replace one of their fighters with a big, heavy-weapon wielder so they can give enough pressure to Hollywood, the opposing team. In the meantime, Hollywood didn’t make any changes. It seemed like their faction leader was pretty satisfied with the current fighter."
 
-    "After another 45 minutes, the score is still 1-1. In the last attack, Hollywood had its corner. It might be the last chance for Hollywood to end the game here."
+    "After 45 minutes, the score is 1-1. Almost everyone in the bar stood up and stared at the screen. Some of the Hollywood fans were so nervous that they turned their faces away and started praying."
 
-    "Almost everyone in the bar stood up and stared at the screen. Some of the Hollywood fans were so nervous that they turned their faces away and started praying."
-
-    "Headshot! Hollywood has scored! Hollywood fighter, Alison, gave a powerful swing and sent the L.A fighter’s head flying!"
+    "\"Headshot! Hollywood has scored! Hollywood fighter, Alison, gave a powerful swing and sent the L.A fighter’s head flying!\""
 
     "Hollywood fans started cheering. Although they only occupied a quarter of the bar, the noise they created roared throughout the bar room"
 
     show terry with dissolve
 
-    LV "\"YES!!!!! We are the champion folks! This is our 7th Champions League title! I've waited for so many years!\""
+    LV "\"YES!!!!! We are the champion folks! I've waited for so many years!\""
 
     "On the other hand, all L.A fans were stunned. Some of them use their hands to cover their face. They still couldn't believe this happened."
 
@@ -529,13 +486,12 @@ label chapter2_bar:
 
     G "\"They’re going to chase us. We need to get a move o-\""
     scene frolic room inside with vpunch
-    "Before Lyra finished her words, a giant fireball passed by and burnt the TV on the wall."
+    "Before Calliope finished her words, a giant fireball passed by and burnt the TV on the wall."
 
     P "\"Woah. What is that?\""
     show ben serious talk with dissolve
-    B "\"Looks like the fire ball is from the Fire Lizard.\""
+    B "\"Looks like the fire ball is from the Lizardmen.\""
 
-    P "\"Lizard? Isn’t Lizard a kind of animal? How does it relate to fire?\""
     hide ben serious talk with dissolve
 
     "Let me get closer and see…"
@@ -545,7 +501,7 @@ label chapter2_bar:
     G "\"Yo [Protagonist]! Stop moving backwards!\""
     hide calliope with dissolve
 
-    "I didn’t hear Calliope because the crowd was getting crazy. Everyone was cheering for the fighters and some friends of Lizardmen Bandits were sniping Terry so that they could win the fight."
+    "I didn’t hear Calliope because the crowd was getting crazy. Everyone was fighting each other."
 
     "As I was moving, I found out that the ice arrow is from a semi-transparent frog. "
 
@@ -555,7 +511,7 @@ label chapter2_bar:
     show lizardmen bandits at left with vpunch
     LB "\"I like your minion. It looks strong. But I am going to kill you and it will be mine! Hahahahahaha…\""
 
-    LV "\"Don’t ever think about it, loser. \""
+    LV "\"Don’t ever think about it, loser.\""
     show terry at right with hpunch
     show lizardmen bandits at left with hpunch
 
@@ -563,13 +519,13 @@ label chapter2_bar:
     with flash
     hide terry
     hide lizardmen bandits
-    "Suddenly, someone from the crowd threw a flash bang and I couldn’t see anything."
+    "Suddenly, a flash appeared in the middle of the room and I couldn’t see anything."
 
-    "After I opened my eyes, the fight had already started."
+    "After I opened my eyes, the fight became more chaotic."
 
     "Lizardmen Bandits and Terry were fighting in the middle of the bar while their minions were also fighting using their magic power. They use whatever is near them to attack and defend."
 
-    "The bar is completely in chaos. Chairs, knives, and bottles are flying in the Frolic Room."
+    "The bar is completely in chaos. Chairs, knives, and bottles are flying around the bar."
 
     "Suddenly, someone caught my arm and tried to drag me out of the frontline."
 
@@ -581,7 +537,7 @@ label chapter2_bar:
 
     stop music fadeout 1.0
 
-    "While Ben was trying to convince me, a stone-made arrow launched and pierced Ben’s body."
+    "While Ben was trying to convince me, a stone-made arrow pierced through Ben’s body."
     with hpunch
 
     #Chapter 2 Ends
