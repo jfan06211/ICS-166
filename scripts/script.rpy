@@ -265,10 +265,10 @@ label chapter2_start:
 
 menu:
     "I was just out on a jog.":
-        L '"A jog? That\'s it? A jog couldn\'t have made you disappear for days.'"'
+        L '"A jog? That\'s it? A jog couldn\'t have made you disappear for days."'
         P '"..."'
         P '"I was just out on a jog..."'
-        L '"[Protagonist]? If you don\'t want to tell me that\'s fine. I\'m just glad you\'re okay.'"'
+        L "\"[Protagonist]? If you don't want to tell me that's fine. I'm just glad you're okay.\""
         P '"Everything does feel a bit off though..."'
         jump ch2_jogchoice_end
 
@@ -276,14 +276,14 @@ menu:
         P '"While I was out on my jog, I slipped and fell down this hill."'
         P '"I found this shack, and there was a glowing mirror inside."'
         P '"When I touched it, there were these flashes of blinding light."'
-        P '"And now I\'m here."'\
+        P '"And now I\'m here."'
         P '"Everything feels a bit off... Even you..."'
 
-label ch2_jogchoice_end:        
+label ch2_jogchoice_end:
     P '"Are you really Lyra?"'
     L '"Lyra? Who\'s Lyra?"'
     P '"You\'re not Lyra?"'
-    L '"Do you not even remember my name, [Protagonist]? I\'m Calliope.'"'
+    L '"Do you not even remember my name, [Protagonist]? I\'m Calliope."'
     G '"Ever since your sorry butt went missing, I\'ve been putting the group\'s survival on my back."'
     G '"Ever since your sorry butt went missing, I\'ve been putting the group\'s survival on my back."'
     G '"We had that whole plan figured out and ready to go, and then you went missing!"'
@@ -583,7 +583,7 @@ label chapter2_bar:
 
     "While Ben was trying to convince me, a stone-made arrow launched and pierced Ben’s body."
     with hpunch
-    
+
     #Chapter 2 Ends
 
 #Chapter 3 Begins
@@ -748,7 +748,7 @@ menu:
         #label ch3_ben_is_here_3:
         with hpunch
         G "What the hell is wrong with you!? He’s DEAD. Can’t you see that?! He’s DEAD and it’s all YOUR FAULT."
-        
+
         G "We’ve been risking our lives bringing you along, because you’re too stupid to understand basic common sense. And now enough is enough. You need to leave before you kill someone else too."
 
         G "Ben would still be here if it weren’t for you — if it weren’t for me bringing you along."
@@ -1010,15 +1010,24 @@ label chapter5_start:
     "It must have been at least midnight. With no phone, and fatigue beginning to set in, I had lost track of how long I had been walking. I could barely see 10 feet ahead of me."
     "Without warning, a giant rock face loomed out of the dark at me."
     scene rockwall with fade
-    "The magic trail went straight into a narrow entrance in the rock. Not too small to squeeze through, but small enough for only one person at a time."
+    "The magic trail went straight into the rock and disappeared."
+    "Now what was I supposed to do?"
+default menuset = set()
 
-menu:
-    "Climb In":
-        jump endchoice
+label begin:
+    menu:
+        set menuset
+        "Look for an entrance":
+            "I walked around the wall, searching for a hidden entrance, or something I had missed. But nothing stood out to me."
+            "I felt this wasn't the right way, so I headed back to my original spot."
+            jump begin
 
-    "Don't Enter":
-        "I was reluctant to enter. Dark, tight spaces aren’t the most pleasant experiences. But... what choice did I have?"
-        jump endchoice
+        "Walk straight into the wall":
+            "If the light went straight into the wall, then so would I."
+            "With a little nervous hesitation, I walked full speed into the wall."
+            "I braced myself for a painful impact..."
+            "...and to my surprise, I walked cleanly through the rock. It was as if the rock wasn't there at all."
+            jump endchoice
 label endchoice:
     scene firstcave with fade
     play music ominous01 loop volume 0.3 fadeout 1.0 fadein 1.0
