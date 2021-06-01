@@ -593,7 +593,7 @@ menu:
         jump ch3_talk_to_ben
 
 label ch3_con_to_stare:
-    show calliope at right with vpunch
+    show calliope angry3 at right with vpunch
     G "What the hell are you standing around for?!"
 
     P "Huh? I just -"
@@ -601,7 +601,7 @@ label ch3_con_to_stare:
     jump ch3_endchoice1
 
 label ch3_arrow:
-    show calliope at right with vpunch
+    show calliope angry3 at right with vpunch
     G "Stop that! Let me handle it."
 
     P "Oh, sorry, I just-"
@@ -613,13 +613,15 @@ label ch3_talk_to_ben:
 
     "There was no response. Ben didn't even look at me."
 
-    show calliope at right with vpunch
+    show calliope angry3 at right with vpunch
     G "[Protagonist], what are you doing?!"
 
     P "Huh? I was just -"
 
 
 label ch3_endchoice1:
+    hide calliope angry3 at right
+    show calliope angry1 at right
     G "Nevermind that. Help me get him out of here."
 
     "Calliope grabbed Ben by the shoulders, and I grabbed him by the legs. He was much lighter than I expected."
@@ -636,11 +638,13 @@ label ch3_endchoice1:
 
     "I watched as she carefully removed the arrow from Ben’s body, and then wrapped the cloth around Ben’s stomach. Then, she took out a plastic canteen and held it to his lips."
 
-    show calliope at left
+    show calliope concerned at left with dissolve
 
     G "Come on Ben, you’ll be alright. Everything will be okay. Stay with me now."
 
     "Calliope’s voice didn’t sound right. Its usual confidence and strength was gone, replaced by something that seemed to be breaking apart."
+
+    hide calliope concerned at left with dissolve
 
     "Ben wasn’t acting right either. No responses. No eye contact. He wasn’t even trying to take a sip of water."
 
@@ -673,17 +677,25 @@ label ch3_con_to_stare_2:
 label ch3_talk_to_cal_2:
     P "Calliope? What’s going on? I don’t understand."
 
+    show calliope angry2 at left with dissolve
     "Calliope turned and glared at me."
 
+    hide calliope angry2 at left
+    show calliope angry3 at left
     G "What’s there not to understand?! Ben is.. He’s…"
 
+    hide calliope angry2 at left
+    show calliope concerned at left
     "She stopped talking to me, turning back to Ben."
 
     G "Please Ben, please just stay a little longer and I can get help."
 
+    hide calliope concerned at left
+
     jump ch3_endchoice2
 
 label ch3_talk_to_ben_2:
+
     P "Ben? What’s wrong? Can you get up and talk to us?"
 
     "Again, Ben was silent. No sign that he even heard me at all."
@@ -691,18 +703,25 @@ label ch3_talk_to_ben_2:
     "Before I could say another word, Calliope began to cry out."
 
 label ch3_endchoice2:
+    show calliope shocked at left
     G "Ben? Ben!? No no no... Please we need you."
 
     "Calliope was sobbing now. Tears were running down her face. I looked at Ben again. His raspy breaths had stopped, replaced with nothing but silence. His eyes were glassy, still staring at nothing."
 
     "Calliope stopped crying out and took a deep breath. She wiped the tears from her face. Then, she took her hand and gently closed Ben’s eyes."
 
+    hide calliope shocked at left
+    show calliope upset at left
     G "I’m sorry..."
 
     P "Calliope? What’s going on?"
 
+    hide calliope upset at left
+    show calliope angry2 at left
     "Calliope turned to me suddenly. Immediately, the pain appeared in her face again, mixed in with a fierce anger."
 
+    hide calliope angry2 at left
+    show calliope angry3 at left
     G "What is wrong with you?!"
 
     P "Huh? What do you-"
@@ -729,13 +748,16 @@ label ch3_ben_is_here_3:
     G "Ben would still be here if it weren’t for you — if it weren’t for me bringing you along."
 
     G "You don’t belong here. Go back to wherever you came from and don’t come back. You’ve done enough here."
+    hide calliope angry3 at left with dissolve
 
     "Calliope stopped looking at me. I thought about responding, but I had no words and I doubted anything I said would make a difference."
 
     jump ch3_endchoice3
 
 label ch3_fine_ill_leave_3:
+    show calliope angry1 at left
     G "Finally. The first reasonable thing you’ve ever said. Now don’t say another word. Just go."
+    hide calliope angry1 at left with dissolve
 
 label ch3_endchoice3:
     "There was only one thing to do. It seemed my journey in this world was done now. There was no point in staying around."
