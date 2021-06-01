@@ -1048,10 +1048,118 @@ label enddoorchoice:
     stop music fadeout 2.0
     #Chapter 5 END
 
+#Chapter 6
+label ch6_start:
+    "Before I knew it, I was running straight for the mirror, my legs practically moving on their own." 
+    "I knew what I wanted, but for the first time, I felt a real sense of excitement."
+    "The buzz from the mirror began to take over my thoughts as I got closer and closer, even drowning out the sound of my feet hitting the hard floor."
 
+    L '"STOP!!!"'
 
+    "I could faintly hear someone calling out to me, but I didn’t care."
+    "I was already close enough to the mirror where I could look in and see the scenery of the other world."
 
+    #sound effect
+    "But every muscle in my body suddenly froze, and the sound of my last footstep echoed throughout the cave."
 
+    L "\"[Protagonist], honey, where do you think you're going? Did you not hear me?\""
+
+    "I could feel my neck loosen up. I turned my head around to see Lyra walking towards me with her arm outstretched."
+
+    L "\"Tell me what you know. It's okay if you told a little lie earlier.\"" 
+    L "\"I get that things you don't understand can be pretty overwhelming.\""
+
+    "She didn't have her usual smile, and her voice had a coldness to it despite addressing me in an endearing way."
+    "There's no way around it now. I have to come clean...but it should be fine."
+    "Lyra did take care of me for my whole life."
+
+    P "\"I’m sorry Lyra. I wasn’t sure how you’d react; I didn’t even understand what had happened to me, so I hid truth.\"" 
+    P "\"When I found the mirror, I ended up in a strange place that looked entirely different from here.\"" 
+    P "\"I was confused, so I immediately grabbed the mirror and appeared right back in the same place as if nothing had happened.\"" 
+    P "\"I only found this place because I saw this weird blue light and followed it here.\""
+
+    "Lyra seemed to accept my story, and the serious look on her face faded away."
+    "However, I got the feeling that I should still keep quiet about what I saw and the people I met."
+
+    L "\"Well, I can't blame you for being a little curious.\""
+    L "\"This isn't exactly something you see every day.\""
+    L "\"You need to be more careful though...especially when I'm not around.\""
+    L "\"There are a lot of dangerous people and things beyond that mirror that will hurt you without a second thought.\""
+    L "\"Understand?\""
+
+    "I nodded as much as I could with Lyra holding me in place."
+
+    L "\"Although that won't really matter once we get rid of all those barbarians.\""
+
+    "..."
+    
+    L "\"Oh! I forgot that you can't move at all. I'll let you go right away.\""
+    L "\"Hehe...sorry about that.\""
+
+    "Did I hear that correctly? Lyra just said that the government wants to \'get rid\'' of the people in the other world."
+    "I remembered how Ben looked right before I came back, how angry Calliope was."
+    "I remembered the sinking feeling in my chest when it happened."
+    "I didn't want anyone else to have to feel that way."
+
+    "My emotions were buzzing, and the sound from the mirror grew louder and louder in my head."
+    "Anger? Frustration? Confusion?"
+    "I felt all of it."
+    "How could I stop the government's plan when I'm so powerless?"
+    "As thoughts were racing through my head, I could feel a tingling sensation building up within my body and spreading to the tips of my fingers."
+    "Could it be...that?"
+    "People here don't use magic like those fireballs I saw before, but it's worth a shot."
+
+    "Lyra released me, and I swung to the side."
+
+menu:
+    "Destroy the mirror":
+        jump break_mirror_choice
+
+    "Attack Lyra":
+        jump keep_mirror_choice
+
+label break_mirror_choice:
+    "I threw my arms in the direction of the mirror, and a blast of magical energy barreled towards it."
+    "Almost immediately, I felt someone hit my neck, and I fell to the ground."
+    "As my vision faded, I could see the see the shattered pieces of the mirror all over the ground."
+
+    L "\"Good morning [Protagonist]. Did you sleep well?\""
+
+    P "\"I did. Thank you Lyra\""
+
+    "That was some dream. It felt so realistic."
+    "There were so many things I've never seen before."
+    "And I think there was someone who looked a lot like...Lyra?"
+    "However strange it was, my memory of the dream faded just like any other, and it was as if it had never happened."
+    "As I got up out of bed, I caught sight of something weird in the corner of my eye."
+
+    "Lyra's reflection looked...different."
+
+label keep_mirror_choice:
+    "I threw my arms in the directionof Lyra, and a blast of magical energy barreled towards her."
+    "She would normally easily be able to avoid something like that, but I think she was frozen with shock."
+    "The blast knocked her to the ground. I'd never seen her this angry before, but I didn't even care as she started shouting at me."
+    "I was already running towards the mirror."
+
+    L "\"HOW DARE YOU?!\""
+    L "\"We gave you a perfect life, and you're willing to just throw it all way?\""
+    L "\"Remember this. Your worthless life will be anything but perfect from this point on.\""
+    L "\"I will personally make sure that it's even more of a living hell than that wretched place you're going.\""
+
+    #flash 
+
+    "..."
+    "..."
+    "It's been a year since I left my \'perfect\' life."
+    "They began their attacks months ago, but we were prepared." 
+    "As soon as I got here, I found Calliope and told her about the government's plans."
+    "We traveled all over this world and somehow convinced people that they should be worried."
+
+    G "\"[Protagonist], come on! We gotta get going to the next town. They're running low on supplies.\""
+
+    "My life has definitely been turned upside down, but there's excitement every day. I'd say that's something worth fighting for."
+
+#end chapter 6
 
 
     return
