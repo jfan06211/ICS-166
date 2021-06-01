@@ -1050,7 +1050,7 @@ label enddoorchoice:
 
 #Chapter 6
 label ch6_start:
-    "Before I knew it, I was running straight for the mirror, my legs practically moving on their own." 
+    "Before I knew it, I was running straight for the mirror, my legs practically moving on their own."
     "I knew what I wanted, but for the first time, I felt a real sense of excitement."
     "The buzz from the mirror began to take over my thoughts as I got closer and closer, even drowning out the sound of my feet hitting the hard floor."
 
@@ -1066,16 +1066,16 @@ label ch6_start:
 
     "I could feel my neck loosen up. I turned my head around to see Lyra walking towards me with her arm outstretched."
 
-    L "\"Tell me what you know. It's okay if you told a little lie earlier.\"" 
+    L "\"Tell me what you know. It's okay if you hid something from me earlier.\""
     L "\"I get that things you don't understand can be pretty overwhelming.\""
 
     "She didn't have her usual smile, and her voice had a coldness to it despite addressing me in an endearing way."
     "There's no way around it now. I have to come clean...but it should be fine."
     "Lyra did take care of me for my whole life."
 
-    P "\"I’m sorry Lyra. I wasn’t sure how you’d react; I didn’t even understand what had happened to me, so I hid truth.\"" 
-    P "\"When I found the mirror, I ended up in a strange place that looked entirely different from here.\"" 
-    P "\"I was confused, so I immediately grabbed the mirror and appeared right back in the same place as if nothing had happened.\"" 
+    P "\"I’m sorry Lyra. I wasn’t sure how you’d react; I didn’t even understand what had happened to me, so I hid the truth.\""
+    P "\"When I found the mirror, I ended up in a strange place that looked entirely different from here.\""
+    P "\"I was confused, so I immediately grabbed the mirror and appeared right back in the same place as if nothing had happened.\""
     P "\"I only found this place because I saw this weird blue light and followed it here.\""
 
     "Lyra seemed to accept my story, and the serious look on her face faded away."
@@ -1092,7 +1092,7 @@ label ch6_start:
     L "\"Although that won't really matter once we get rid of all those barbarians.\""
 
     "..."
-    
+
     L "\"Oh! I forgot that you can't move at all. I'll let you go right away.\""
     L "\"Hehe...sorry about that.\""
 
@@ -1121,7 +1121,7 @@ menu:
 label break_mirror_choice:
     "I threw my arms in the direction of the mirror, and a blast of magical energy barreled towards it."
     "Almost immediately, I felt someone hit my neck, and I fell to the ground."
-    "As my vision faded, I could see the see the shattered pieces of the mirror all over the ground."
+    "As my vision faded, I could see the see the shattered pieces of the mirror next to me."
 
     L "\"Good morning [Protagonist]. Did you sleep well?\""
 
@@ -1134,24 +1134,25 @@ label break_mirror_choice:
     "As I got up out of bed, I caught sight of something weird in the corner of my eye."
 
     "Lyra's reflection looked...different."
+    return
 
 label keep_mirror_choice:
-    "I threw my arms in the directionof Lyra, and a blast of magical energy barreled towards her."
+    "I threw my arms in the direction of Lyra, and a blast of magical energy barreled towards her."
     "She would normally easily be able to avoid something like that, but I think she was frozen with shock."
     "The blast knocked her to the ground. I'd never seen her this angry before, but I didn't even care as she started shouting at me."
     "I was already running towards the mirror."
 
     L "\"HOW DARE YOU?!\""
-    L "\"We gave you a perfect life, and you're willing to just throw it all way?\""
+    L "\"We gave you a perfect life, and you're willing to just throw it all away?\""
     L "\"Remember this. Your worthless life will be anything but perfect from this point on.\""
     L "\"I will personally make sure that it's even more of a living hell than that wretched place you're going.\""
 
-    #flash 
+    #flash
 
     "..."
     "..."
     "It's been a year since I left my \'perfect\' life."
-    "They began their attacks months ago, but we were prepared." 
+    "They began their attacks months ago, but we were prepared."
     "As soon as I got here, I found Calliope and told her about the government's plans."
     "We traveled all over this world and somehow convinced people that they should be worried."
 
