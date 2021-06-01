@@ -228,7 +228,7 @@ label chapter2_start:
 
     "What just happened?"
 
-    "Sunlight crept through the creaks of the shack."
+    "Moonlight crept through the crevices of the shack."
 
     "......"
     play music "audio/BTR-Ominous-01.mp3" fadein 1.0
@@ -248,28 +248,47 @@ label chapter2_start:
     play music "audio/night_theme.mp3"
     scene diningroom with dissolve
     play sound "audio/doorOpened.mp3"
-    "As I stepped in front of my house, I heard movement from within"
+    "As I stepped in front of my house, I heard movement from within."
 
     P "\"Who’s in my house? I don't remember inviting anyone over...\""
     "Oh it must be Lyra! She’s probably over to check up on me. Gotta tell her I was just out on a short jog."
     "A strange, but familiar figure rushed out as I entered the house."
     show calliope with vpunch
-    G "\"[Protagonist]...! Is that really you?\""
+    L "\"[Protagonist]...! Is that really you?\""
     "Lyra...?"
     play music "audio/BTR-Ominous-01.mp3" fadein 1.0
-    G "\"You’ve been gone for so long! Where have you been?\""
+    L "\"You’ve been gone for so long! Where have you been?\""
     P "\"Just...a little jog...\""
     "Come to think of it, my whole house looks a bit...old? That can’t be right..."
-    G "\"Just a jog? You’ve been gone for days! I’m so glad you’re alright.\""
-    G "\"I’ve been meaning to invite you when you come back, but let’s go to the Frolic Room bar! Let’s watch the gladiator matches!\""
+    L "\"Just a jog? You’ve been gone for days! I’m so glad you’re alright.\""
+    L "\"What happened to you?\""
 
 menu:
+    "I was just out on a jog.":
+        L '"A jog? That\'s it? A jog couldn\'t have made you disappear for days.'"'
+        P '"..."'
+        P '"I was just out on a jog..."'
+        L '"[Protagonist]? If you don\'t want to tell me that\'s fine. I\'m just glad you\'re okay.'"'
+        P '"Everything does feel a bit off though..."'
+        jump ch2_jogchoice_end
 
-    "What are you talking about?":
-        jump chapter2_confused
+    "I went through this mirror.":
+        P '"While I was out on my jog, I slipped and fell down this hill."'
+        P '"I found this shack, and there was a glowing mirror inside."'
+        P '"When I touched it, there were these flashes of blinding light."'
+        P '"And now I\'m here."'\
+        P '"Everything feels a bit off... Even you..."'
 
-    "Let's goooooo!!!":
-        jump chapter2_pretend
+label ch2_jogchoice_end:        
+    P '"Are you really Lyra?"'
+    L '"Lyra? Who\'s Lyra?"'
+    P '"You\'re not Lyra?"'
+    L '"Do you not even remember my name, [Protagonist]? I\'m Calliope.'"'
+    G '"Ever since your sorry butt went missing, I\'ve been putting the group\'s survival on my back."'
+    G '"Ever since your sorry butt went missing, I\'ve been putting the group\'s survival on my back."'
+    G '"We had that whole plan figured out and ready to go, and then you went missing!"'
+    G "\"I’ve been meaning to invite you when you come back, but let’s go to the Frolic Room bar! Let’s watch the gladiator matches!\""
+
 
 label chapter2_confused:
 
