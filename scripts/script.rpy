@@ -32,16 +32,16 @@ label start:
     scene dream_blur with dissolve
     "Where...am I?"
     scene dream_blur_sil1 with dissolve
-    unknown "\"...Look at our baby honey! Isn't it just the most adorable thing?\""
+    unknown "\"...Look at our baby honey! Aren't they just the most adorable thing?\""
     "Whose voice is that...?"
     scene dream_blur_sil2 with dissolve
-    unknown "\"Oh look how big our baby is! What should we name it?\""
+    unknown "\"Oh look how big our baby is! What should we name them?\""
     "Name..."
     $ Protagonist = renpy.input("What is your name?", length=32)
     $ Protagonist = Protagonist.strip()
     if not Protagonist:
         $ Protagonist = "Player"
-    unknown "\"Let’s name it [Protagonist]! Okay baby, you’re [Protagonist] from now on okay?\""
+    unknown "\"Let’s name them [Protagonist]! Okay baby, you’re [Protagonist] from now on okay?\""
     "That name...isn't that my nam-"
     unknown "\"[Protagonist]!!\""
     scene bedroom with vpunch
@@ -58,15 +58,15 @@ label start:
     L "\"Dream?\""
     L "\"Well that's fine I guess.\""
     L "\"It's already morning, the beautiful sun's out. Don't you have work today?\""
-    "Lyra. My caretaker given by our government."
-    "She is a wonderful, caring person who took care of me ever since I was born. I don’t have a family. No one in the city has a family, we are all taken care of by our caretakers. You could say they’re our only family."
+    "Lyra. My caretaker assigned by our government."
+    "She is a wonderful, caring person who took care of me ever since I was born. I don’t have a family. No one in the city does. We are all taken care of by our caretakers. You could say they’re our only family."
     P "\"Oh you're right. I have a meeting today.\""
     L "\"Go on ahead and wash your face whenever you're ready.\""
     L "\"I already prepared breakfast, just come to the living room whenever you're hungry!\""
     hide lyra normal with dissolve
-    "Lyra stood up to open the blinds next to my bed. A beautiful ray of sunlight shines through the window."
+    "Lyra stood up to open the blinds next to my bed. A beautiful ray of sunlight shone through the window."
     "Ah. Another bright day."
-    "As I look out the window, flying cars zoom by the blue sky."
+    "As I looked out the window, flying cars zoomed by the blue sky."
     P "\"Looks like this is going to be another peaceful day.\""
     P "\"System Theme Activation: Pseudo Change Favorite Sequence 1.\""
     HS "\"System Themes require permission. Grant access?\""
@@ -76,7 +76,7 @@ label start:
     HS "\"Request accepted. Changing.\""
     scene bedroomchangeday with pixellate
     HS "\"Theme change complete.\""
-    "Perfect"
+    "Perfect."
     show lyra normal at left with moveinleft
     L "\"How come you always like to change the theme of your room into an older-style Japanese theme?\""
     L "\"It looks like the 21st century in here.\""
@@ -85,37 +85,37 @@ label start:
     "Great architectural designs too."
     L "\"I prefer the look of more modern rooms, but I do agree the vintage atmosphere is very nice.\""
     hide lyra normal with moveoutleft
-    "My room is currently holographically mirroring the image of an older-style Japanese-themed room due to one of the systems implemented in this house by the previous owner."
-    "Based on my interests, I can remodel my room to be anything I like, and it will shape itself into the splitting image I imagine."
+    "My room holographically mirrored the image of an older-style Japanese-themed room due to one of the systems implemented in this house by the previous owner."
+    "Based on my interests, I could remodel my room to be anything I liked, and it would shape itself into anything I could imagine."
     show lyra normal with dissolve
     L "\"Don’t forget to eat your breakfast! I’m going to go now.\""
     show lyra normal at right with move
     hide lyra normal with dissolve
-    "I nod, and we waved goodbye to each other. Lyra’s face smiles brightly as she departs."
+    "I nodded, and we waved goodbye to each other. Lyra’s face smiled brightly as she departed."
     scene diningroom with fade
     "I came out to the living room, and ate the breakfast Lyra cooked for me."
     "Blueberry pancakes with sunny side up eggs and bacon. Classic."
-    "I’m currently living in a house near Garden Land Trailhead, one of the quietest parts of the city with its famous hiking trails."
-    "It’s a one-story house, big enough for 2 residents, but maybe a little too big for one. The best feature of this house is its ability to stay warm throughout the year. Never too cold. Never too hot."
-    "Its walls are made with a mixture of cement and pserium, a magical powder developed by the Governmental Laboratory used to maintain stability and give it ideal conditions throughout the season."
-    "We are really living it up technologies these days."
+    "I was currently living in a house near Garden Land Trailhead, one of the quietest parts of the city with its famous hiking trails."
+    "It was a one-story house, big enough for 2 residents, but maybe a little too big for one. The best feature of this house was its ability to stay warm throughout the year. Never too cold. Never too hot."
+    "Its walls were made with a mixture of cement and pserium, a magical powder developed by the Governmental Laboratory used to maintain stability and give it ideal conditions throughout the season."
+    "We were really living it up with technology these days."
     unknown "\"Master, I have finished cleaning duties.\""
     P "\"Hm?\""
     show cleanbot normal with moveinright
     "As I looked to my right to where the voice came from, a tall human-like android stood in front of me dressed in a suit."
-    "It's the cleaning bot that was included with this house Lyra gave me a few years back."
+    "It was the cleaning bot that Lyra gave me a few years back."
     show cleanbot talk
     cleanBot "\"Do you have any more requests, Master?\""
     P "\"No, you can rest.\""
     cleanBot "\"Yes, Master.\""
     hide cleanbot talk with dissolve
-    "The android makes its way to the wall next to my room and turns itself into a small, circular object tucked neatly away into a shelf."
+    "The android made its way to the wall next to my room and turned itself into a small, circular object tucked neatly away into a shelf."
     P "\"I guess it's time to go to work.\""
-    "I put away my plate into the automatic cleaning sink, and head back to my room."
+    "I put away my plate into the automatic cleaning sink, and headed back to my room."
     stop music fadeout 1.0
     scene bedroomchangenightlight with Fade(0.5,2.0,0.5)
     play music "audio/night_theme.mp3"
-    "It is now 8:30 in the evening as I call off my job's meeting and shut down my computer."
+    "It was now 8:30 in the evening as I called off my job's meeting and shut down my computer."
     "Thinking about nothing, I laid down on my bed."
     P "\"That meeting was longer than I thought...Looks like it will be a busy day tomorrow working on that new website for my client.\""
     "Hmm..."
@@ -124,13 +124,13 @@ label start:
     play sound "audio/doorOpened.mp3"
     scene bedroomchangenight
     scene nightsky with Fade(0.5,2.0,0.5)
-    "The night sky was still, and the light from the moon shone down the trail as I jog."
-    "I kept my breath steady as the cold wind blows against my face with a freezing touch. The heat generated through my energy exertion slowly warms my face up."
+    "The night sky was still, and the light from the moon shone down the trail as I jogged."
+    "I kept my breath steady as the cold wind blew against my face with a freezing touch. The heat generated through my energy exertion slowly warmed up my face."
     P "\"Wait a minute.\""
     "In the corner of my eye, I saw a faint shimmer of light deep within the hills."
     P "\"What is that...?\""
     play sound "audio/hover_over.mp3" volume 0.8
-    "A loud engine starts hovering behind me."
+    "A loud engine started hovering behind me."
     P "\"What's that soun-\""
     menu:
         "Turn around":
@@ -156,7 +156,7 @@ label Ch1_continue:
     scene nightsky_truckhover with dissolve
     P "\"Woahh, look at the size of that thing! It’s the newest truck model! That actually looks so coo-\""
     stop music fadeout 1.0
-    "My leg slid on a pebble on the edge of the trail."
+    "My foot slid on a pebble on the edge of the trail."
     P "\"W-woa..h..!!\""
     with vpunch
     play sound "audio/fallDown.mp3"
@@ -170,7 +170,7 @@ label Ch1_continue:
     play music "audio/night_ambience.mp3" fadein 1.0 volume 0.8
     scene forest with fade
     "My body jolted in pain as I slammed myself into a tree."
-    "Haven't felt something like this since the incident of me hitting my funny bone on the edge of a sofa."
+    "Haven't felt something like this since I hit my funny bone on the edge of a sofa."
     "Wasn't fun."
     P "\"Did I really tripped on a rock while sidetracking...\""
     "Well that was an event."
@@ -228,7 +228,7 @@ label chapter2_start:
 
     "What just happened?"
 
-    "The moonlight crept through the creaks of the shack."
+    "Sunlight crept through the creaks of the shack."
 
     "......"
     play music "audio/BTR-Ominous-01.mp3" fadein 1.0
@@ -567,9 +567,8 @@ label chapter2_bar:
     
     #Chapter 2 Ends
 
-    #Chapter 3 Begins
+#Chapter 3 Begins
     play music audio.ominous02 fadein 5.0 volume 0.8
-label chapter3_start:
 
     hide ben
 
@@ -584,39 +583,36 @@ label chapter3_start:
 # choice 1
 menu:
     "Continue to Stare":
-        jump ch3_con_to_stare
+        #label ch3_con_to_stare:
+        show calliope angry3 at right with vpunch
+        G "What the hell are you standing around for?!"
+
+        P "Huh? I just -"
+
+        jump ch3_endchoice1
+        #jump ch3_con_to_stare
 
     "Grab the Arrow":
-        jump ch3_arrow
+        # label ch3_arrow:
+        show calliope angry3 at right with vpunch
+        G "Stop that! Let me handle it."
+
+        P "Oh, sorry, I just-"
+
+        jump ch3_endchoice1
+        #jump ch3_arrow
 
     "Talk to Ben":
-        jump ch3_talk_to_ben
+        # label ch3_talk_to_ben:
+        P "Ben? Come on, get up. You're... making me uncomfortable."
 
-label ch3_con_to_stare:
-    show calliope angry3 at right with vpunch
-    G "What the hell are you standing around for?!"
+        "There was no response. Ben didn't even look at me."
 
-    P "Huh? I just -"
+        show calliope angry3 at right with vpunch
+        G "[Protagonist], what are you doing?!"
 
-    jump ch3_endchoice1
-
-label ch3_arrow:
-    show calliope angry3 at right with vpunch
-    G "Stop that! Let me handle it."
-
-    P "Oh, sorry, I just-"
-
-    jump ch3_endchoice1
-
-label ch3_talk_to_ben:
-    P "Ben? Come on, get up. You're... making me uncomfortable."
-
-    "There was no response. Ben didn't even look at me."
-
-    show calliope angry3 at right with vpunch
-    G "[Protagonist], what are you doing?!"
-
-    P "Huh? I was just -"
+        P "Huh? I was just -"
+        #jump ch3_talk_to_ben
 
 
 label ch3_endchoice1:
@@ -651,56 +647,51 @@ label ch3_endchoice1:
 # choice 2
 menu:
     "Continue to Stare":
-        jump ch3_con_to_stare_2
+        #label ch3_con_to_stare_2:
+        "I continued to stare at Ben, laying on the ground. His only movement came from his barely noticeable breaths. The look on Calliope’s face was one I had never seen on her before."
+
+        "Her expression was panicked, her eyes were watering, and she kept mumbling, begging Ben to stay here."
+
+        "I didn’t understand. Where was Ben going? How could someone be going somewhere when they didn’t move at all. Nothing was making sense."
+
+        "I suddenly felt very out of place. The reality of being in a completely different world, with completely different rules and ideas began to hit me. What was happening? What was I doing here?"
+
+        "Maybe I need to go. Maybe I wasn’t ever meant to be here."
+
+        "Before I could really consider leaving, Calliope began to cry out."
+
+        jump ch3_endchoice2
+        #jump ch3_con_to_stare_2
 
     "Talk to Calliope":
-        jump ch3_talk_to_cal_2
+        # label ch3_talk_to_cal_2:
+        P "Calliope? What’s going on? I don’t understand."
+
+        show calliope angry2 at left with dissolve
+        "Calliope turned and glared at me."
+
+        hide calliope angry2 at left
+        show calliope angry3 at left
+        G "What’s there not to understand?! Ben is.. He’s…"
+
+        hide calliope angry2 at left
+        show calliope concerned at left
+        "She stopped talking to me, turning back to Ben."
+
+        G "Please Ben, please just stay a little longer and I can get help."
+
+        hide calliope concerned at left
+        jump ch3_endchoice2
+        #jump ch3_talk_to_cal_2
 
     "Talk to Ben":
-        jump ch3_talk_to_ben_2
+        #label ch3_talk_to_ben_2:
+        P "Ben? What’s wrong? Can you get up and talk to us?"
 
-label ch3_con_to_stare_2:
-    "I continued to stare at Ben, laying on the ground. His only movement came from his barely noticeable breaths. The look on Calliope’s face was one I had never seen on her before."
+        "Again, Ben was silent. No sign that he even heard me at all."
 
-    "Her expression was panicked, her eyes were watering, and she kept mumbling, begging Ben to stay here."
-
-    "I didn’t understand. Where was Ben going? How could someone be going somewhere when they didn’t move at all. Nothing was making sense."
-
-    "I suddenly felt very out of place. The reality of being in a completely different world, with completely different rules and ideas began to hit me. What was happening? What was I doing here?"
-
-    "Maybe I need to go. Maybe I wasn’t ever meant to be here."
-
-    "Before I could really consider leaving, Calliope began to cry out."
-
-    jump ch3_endchoice2
-
-label ch3_talk_to_cal_2:
-    P "Calliope? What’s going on? I don’t understand."
-
-    show calliope angry2 at left with dissolve
-    "Calliope turned and glared at me."
-
-    hide calliope angry2 at left
-    show calliope angry3 at left
-    G "What’s there not to understand?! Ben is.. He’s…"
-
-    hide calliope angry2 at left
-    show calliope concerned at left
-    "She stopped talking to me, turning back to Ben."
-
-    G "Please Ben, please just stay a little longer and I can get help."
-
-    hide calliope concerned at left
-
-    jump ch3_endchoice2
-
-label ch3_talk_to_ben_2:
-
-    P "Ben? What’s wrong? Can you get up and talk to us?"
-
-    "Again, Ben was silent. No sign that he even heard me at all."
-
-    "Before I could say another word, Calliope began to cry out."
+        "Before I could say another word, Calliope began to cry out."
+        #jump ch3_talk_to_ben_2
 
 label ch3_endchoice2:
     show calliope shocked at left
@@ -735,29 +726,29 @@ label ch3_endchoice2:
 # Choice 3
 menu:
     '"Ben is still here."':
-        jump ch3_ben_is_here_3
+        #label ch3_ben_is_here_3:
+        with hpunch
+        G "What the hell is wrong with you!? He’s DEAD. Can’t you see that?! He’s DEAD and it’s all YOUR FAULT."
+        
+        G "We’ve been risking our lives bringing you along, because you’re too stupid to understand basic common sense. And now enough is enough. You need to leave before you kill someone else too."
+
+        G "Ben would still be here if it weren’t for you — if it weren’t for me bringing you along."
+
+        G "You don’t belong here. Go back to wherever you came from and don’t come back. You’ve done enough here."
+        hide calliope angry3 at left with dissolve
+
+        "Calliope stopped looking at me. I thought about responding, but I had no words and I doubted anything I said would make a difference."
+
+        jump ch3_endchoice3
+        #jump ch3_ben_is_here_3
 
     '"Fine, I\'ll leave."':
-        jump ch3_fine_ill_leave_3
+        #label ch3_fine_ill_leave_3:
+        show calliope angry1 at left
+        G "Finally. The first reasonable thing you’ve ever said. Now don’t say another word. Just go."
+        hide calliope angry1 at left with dissolve
+        #jump ch3_fine_ill_leave_3
 
-label ch3_ben_is_here_3:
-    G "What the hell is wrong with you!? He’s DEAD. Can’t you see that?! He’s DEAD and it’s all YOUR FAULT."
-
-    G "We’ve been risking our lives bringing you along, because you’re too stupid to understand basic common sense. And now enough is enough. You need to leave before you kill someone else too."
-
-    G "Ben would still be here if it weren’t for you — if it weren’t for me bringing you along."
-
-    G "You don’t belong here. Go back to wherever you came from and don’t come back. You’ve done enough here."
-    hide calliope angry3 at left with dissolve
-
-    "Calliope stopped looking at me. I thought about responding, but I had no words and I doubted anything I said would make a difference."
-
-    jump ch3_endchoice3
-
-label ch3_fine_ill_leave_3:
-    show calliope angry1 at left
-    G "Finally. The first reasonable thing you’ve ever said. Now don’t say another word. Just go."
-    hide calliope angry1 at left with dissolve
 
 label ch3_endchoice3:
     "There was only one thing to do. It seemed my journey in this world was done now. There was no point in staying around."
@@ -769,7 +760,7 @@ label ch3_endchoice3:
 
     # End of Chapter 3
 
-    #Chapter 4
+#Chapter 4
 
 label chapter4_start:
     #show home environment
