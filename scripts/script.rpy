@@ -22,6 +22,9 @@ define audio.ominous02 = "audio/BTR-Ominous-02.mp3"
 
 # Custom transitions
 define flash = Fade(0.1, 0.0, 0.5, color="#fff")
+define fadehold = Fade(1.0, 1.0, 1.0)
+define slowfade = Fade(3.0, 1.0, 3.0)
+define slowfadehold = Fade(5.0, 1.0, 1.0)
 
 
 # The game starts here.
@@ -1051,17 +1054,24 @@ label enddoorchoice:
 #Chapter 6
 label ch6_start:
     "Before I knew it, I was running straight for the mirror, my legs practically moving on their own."
+    play sound "audio/cave_running.mp3" loop
     "I knew what I wanted, but for the first time, I felt a real sense of excitement."
+    scene finalcave_closer with fade
     "The buzz from the mirror began to take over my thoughts as I got closer and closer, even drowning out the sound of my feet hitting the hard floor."
-
+    scene finalcave_closest with fade
+    show lyra angry3 at right with hpunch
     L '"STOP!!!"'
+    hide lyra angry3 with moveoutright
 
     "I could faintly hear someone calling out to me, but I didn’t care."
     "I was already close enough to the mirror where I could look in and see the scenery of the other world."
 
-    #sound effect
+    stop sound
+
     "But every muscle in my body suddenly froze, and the sound of my last footstep echoed throughout the cave."
 
+    show lyra serious at right with dissolve
+    play music "audio/BTR-Ominous-01.mp3" loop volume 0.5
     L "\"[Protagonist], honey, where do you think you're going? Did you not hear me?\""
 
     "I could feel my neck loosen up. I turned my head around to see Lyra walking towards me with her arm outstretched."
@@ -1079,6 +1089,9 @@ label ch6_start:
     P "\"I only found this place because I saw this weird blue light and followed it here.\""
 
     "Lyra seemed to accept my story, and the serious look on her face faded away."
+    hide lyra serious at right
+    show lyra normal at right
+    stop music fadeout 3.0
     "However, I got the feeling that I should still keep quiet about what I saw and the people I met."
 
     L "\"Well, I can't blame you for being a little curious.\""
@@ -1093,7 +1106,11 @@ label ch6_start:
 
     "..."
 
+    hide lyra normal at right
+    show lyra surprised at right
     L "\"Oh! I forgot that you can't move at all. I'll let you go right away.\""
+    hide lyra surprised at right
+    show lyra happy at right
     L "\"Hehe...sorry about that.\""
 
     "Did I hear that correctly? Lyra just said that the government wants to \'get rid\'' of the people in the other world."
@@ -1110,6 +1127,8 @@ label ch6_start:
     "People here don't use magic like those fireballs I saw before, but it's worth a shot."
 
     "Lyra released me, and I swung to the side."
+    hide lyra happy at right
+    show lyra surprised at right
 
 menu:
     "Destroy the mirror":
@@ -1120,47 +1139,70 @@ menu:
 
 label break_mirror_choice:
     "I threw my arms in the direction of the mirror, and a blast of magical energy barreled towards it."
+    hide lyra surprised at right with moveoutright
     "Almost immediately, I felt someone hit my neck, and I fell to the ground."
     "As my vision faded, I could see the see the shattered pieces of the mirror next to me."
+    scene finalcave_closest_blurred with fadehold
+    scene black with fadehold
 
     L "\"Good morning [Protagonist]. Did you sleep well?\""
+
+    scene reflection with fade
+    show lyra normal with dissolve
+    play music "audio/daytimetheme.mp3" volume 0.8
 
     P "\"I did. Thank you Lyra\""
 
     "That was some dream. It felt so realistic."
     "There were so many things I've never seen before."
-    "And I think there was someone who looked a lot like...Lyra?"
+    "And I think there was someone who looked a lot like Lyra?"
     "However strange it was, my memory of the dream faded just like any other, and it was as if it had never happened."
     "As I got up out of bed, I caught sight of something weird in the corner of my eye."
 
+    stop music fadeout 5.0
+    scene reflection_blurred with dissolve
+
     "Lyra's reflection looked...different."
+    scene black with slowfadehold
+    play audio [ "<silence 3.0>", "audio/dragon_roar.mp3" ]
+    scene mirror_dragon with slowfade
     return
 
 label keep_mirror_choice:
+    show lyra surprised at right
     "I threw my arms in the direction of Lyra, and a blast of magical energy barreled towards her."
     "She would normally easily be able to avoid something like that, but I think she was frozen with shock."
     "The blast knocked her to the ground. I'd never seen her this angry before, but I didn't even care as she started shouting at me."
+    with vpunch
+    hide lyra surprised at right with moveoutright
     "I was already running towards the mirror."
 
+    hide lyra surprised at right
+    show lyra angry3 at right with hpunch
     L "\"HOW DARE YOU?!\""
     L "\"We gave you a perfect life, and you're willing to just throw it all away?\""
     L "\"Remember this. Your worthless life will be anything but perfect from this point on.\""
     L "\"I will personally make sure that it's even more of a living hell than that wretched place you're going.\""
 
-    #flash
+    scene black with flash
 
     "..."
-    "..."
+    play music "audio/daytimetheme.mp3" volume 0.8
     "It's been a year since I left my \'perfect\' life."
     "They began their attacks months ago, but we were prepared."
     "As soon as I got here, I found Calliope and told her about the government's plans."
     "We traveled all over this world and somehow convinced people that they should be worried."
 
+    scene end_scene with dissolve
+    show calliope normal with dissolve
     G "\"[Protagonist], come on! We gotta get going to the next town. They're running low on supplies.\""
 
-    "My life has definitely been turned upside down, but there's excitement every day. I'd say that's something worth fighting for."
-
-#end chapter 6
-
+    "My life has definitely been turned upside down, but there's excitement every day. I'd say that's something worth fighting for."   
+    stop music fadeout 5.0
+    scene black with slowfadehold
+    play audio [ "<silence 3.0>", "audio/dragon_roar.mp3" ]
+    scene mirror_dragon with slowfade
 
     return
+
+    #end ch6
