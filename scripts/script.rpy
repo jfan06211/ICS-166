@@ -260,6 +260,7 @@ label chapter2_start:
     L "\"[Protagonist]...! Is that really you?\""
     "Lyra...?"
     play music "audio/BTR-Ominous-01.mp3" fadein 1.0
+    show calliope concerned
     L "\"You’ve been gone for so long! Where have you been?\""
     P "\"Just...a little jog...\""
     "Come to think of it, my whole house looks a bit...old? That can’t be right..."
@@ -271,6 +272,7 @@ menu:
         L '"A jog? That\'s it? A jog couldn\'t have made you disappear for days."'
         P '"..."'
         P '"I was just out on a jog..."'
+        show calliope normal
         L "\"[Protagonist]? If you don't want to tell me that's fine. I'm just glad you're okay.\""
         P '"Everything does feel a bit off though..."'
         jump ch2_jogchoice_end
@@ -285,33 +287,39 @@ menu:
 
 label ch2_jogchoice_end:
     P '"Are you really Lyra?"'
+    show calliope concerned
     L '"Lyra? Who\'s Lyra?"'
     P '"You\'re not Lyra?"'
     L '"Do you not even remember my name, [Protagonist]? I\'m Calliope."'
+    show calliope angry3
     G '"Ever since your sorry butt went missing, I\'ve been putting the group\'s survival on my back."'
     G '"It\'s my job to take care of your guys and when you went missing, I felt like I\'d failed."'
+    show calliope angry1
     G '"We had that whole plan figured out and ready to go, and then you disappeared!"'
     P '"What plan?"'
+    show calliope angry3
     G '"The plan was for you, Ben, and me to go to the Frolic Room Bar to restock on supplies."'
     P '"Supplies?"'
+    show calliope normal
     G '"Here, I\'m going to call Ben now that you\'re back, so we can continue the plan."'
     scene black with fade
+    stop music fadeout 2.0
 
-    hide calliope with dissolve
+    hide calliope normal with dissolve
     scene nightsky with fade
-    stop music fadeout 1.0
     play music "audio/night_theme.mp3"
 
     P "\"I don't understand... Why are we going to this bar again? Supplies for who?\""
-    show calliope at right with dissolve
+    show calliope concerned at right with dissolve
     G "\"Did you hit your head while you were out? We're sending Ben in there to grab some supplies for the group.\""
 
     P "\"The group?\""
-
+    show calliope angry1 at right
     G "\"Okay [Protagonist], I'm glad you're okay and all, but you seriously need to get it together before we get to the bar!\""
     show ben normal at left with dissolve
     B "\"Don't worry Calliope, I'll explain everything to our forgetful friend here. Things must've happened when [Protagonist] was gone.\""
     show ben normal talk at left with dissolve
+    show calliope at right
 
     "I'm guessing this Ben guy is a close friend of ours. He seems nice, but..."
 
@@ -323,14 +331,14 @@ label ch2_jogchoice_end:
     show ben smile at left
     B "\"Anyway, now that you're back, we can go through with our plan to pay the bar a visit and uhh... borrow a few things. But regardless, we're glad you're okay.\""
     show ben normal at left
-    show calliope at right with vpunch
+    show calliope normal at right with vpunch
 
     "This \"Calliope\"... she looks exactly like Lyra... but instead of being my personal caretaker... she seems to be the caretaker for this whole \"group\" thing that was mentioned."
 
     G "\"Anyway, once we get to the bar, you and I will stand by while Ben snags some stuff we could use.\""
 
     P "\"Why are you taking things from someone else? Don't you have everything you need at your residences?\""
-
+    show calliope concerned at right
     G "\"I really wish that were the case, buddy. But unfortunately, the people around here don't exactly like to give out treats to those in need. That's why I do my best to look after all of you.\""
 
     jump chapter2_bar
@@ -353,7 +361,7 @@ label chapter2_bar:
     "As Ben turned the corner, he pulled his hood up and gave us a quick thumbs up before becoming buried by shadows."
 
     P "\"So, what exactly is a bar? What do people do here?\""
-    show calliope with dissolve
+    show calliope concerned with dissolve
     G "\"Oh you know… rich folk with nothing to do sitting around, getting drunk, and throwing fists at each other.\""
 
     P "\"Geting drunk?\""
@@ -438,12 +446,12 @@ label chapter2_bar:
     hide terry with dissolve
     hide lizardmen bandits with dissolve
 
-    show calliope with dissolve
+    show calliope serious with dissolve
     G "\"Damn. This is not good. We'd better leave.\""
 
     "Suddenly, a loud voice spoke up over the rest of the room."
 
-    hide calliope with dissolve
+    hide calliope serious with dissolve
     show lizardmen bandits with vpunch
 
     LB "\"Hey! Watcha got there? A little present for me?\""
@@ -469,7 +477,7 @@ label chapter2_bar:
     hide lizardmen bandits with dissolve
     hide ben serious with dissolve
 
-    show calliope with dissolve
+    show calliope angry3 with dissolve
     with hpunch
 
     G "\"Crap… we need to get him out and fast. Stay here. Lay low and don’t do anything stupid.\""
@@ -478,13 +486,13 @@ label chapter2_bar:
 
     G "\"No no no. Bar fights are not the normal fights you see on TVs. This is the part you don't want to experience. Just STAY THERE!\""
 
-    hide calliope with dissolve
+    hide calliope angry3 with dissolve
 
     "More and more drunk people heard that there was a fight in the Frolic Room and tried to squeeze in to see what happened."
 
     "Calliope managed to pick up Ben and ran out away from Terry and the two lizardmen"
     show ben serious talk at left with dissolve
-    show calliope at right with dissolve
+    show calliope serious at right with dissolve
     B "\"We're too late. There is no way out now. All of the exits are blocked by crowds. We'd better start moving to one of the exits and see if we can get through them.\""
 
     G "\"They’re going to chase us. We need to get a move o-\""
@@ -500,9 +508,9 @@ label chapter2_bar:
     "Let me get closer and see…"
     show frolic room inside with hpunch
     "While I got closer to the fighting stage, an ice arrow came out of nowhere and pierced the wall."
-    show calliope at right with vpunch
+    show calliope shocked at right with vpunch
     G "\"Yo [Protagonist]! Stop moving backwards!\""
-    hide calliope with dissolve
+    hide calliope shocked with dissolve
 
     "I didn’t hear Calliope because the crowd was getting crazy. Everyone was fighting each other."
 
@@ -1151,7 +1159,7 @@ label break_mirror_choice:
     show lyra normal with dissolve
     play music "audio/daytimetheme.mp3" volume 0.8
 
-    P "\"I did. Thank you Lyra\""
+    P "\"I did. Thank you Lyra.\""
 
     "That was some dream. It felt so realistic."
     "There were so many things I've never seen before."
@@ -1166,6 +1174,8 @@ label break_mirror_choice:
     scene black with slowfadehold
     play audio [ "<silence 3.0>", "audio/dragon_roar.mp3" ]
     scene mirror_dragon with slowfade
+    scene black with slowfade
+    stop audio
     return
 
 label keep_mirror_choice:
@@ -1197,11 +1207,13 @@ label keep_mirror_choice:
     show calliope normal with dissolve
     G "\"[Protagonist], come on! We gotta get going to the next town. They're running low on supplies.\""
 
-    "My life has definitely been turned upside down, but there's excitement every day. I'd say that's something worth fighting for."   
+    "My life has definitely been turned upside down, but there's excitement every day. I'd say that's something worth fighting for."
     stop music fadeout 5.0
     scene black with slowfadehold
     play audio [ "<silence 3.0>", "audio/dragon_roar.mp3" ]
     scene mirror_dragon with slowfade
+    scene black with slowfade
+    stop audio
 
     return
 
