@@ -263,7 +263,7 @@ label chapter2_start:
     show calliope concerned
     L "\"You’ve been gone for so long! Where have you been?\""
     P "\"Just...a little jog...\""
-    "Come to think of it, my whole house looks a bit...old? That can’t be right..."
+    "Come to think of it, my whole house looked a bit...old? That couldn’t be right..."
     L "\"Just a jog? You’ve been gone for days! I’m so glad you’re alright.\""
     L "\"What happened to you?\""
 
@@ -293,7 +293,7 @@ label ch2_jogchoice_end:
     L '"Do you not even remember my name, [Protagonist]? I\'m Calliope."'
     show calliope angry3
     G '"Ever since your sorry butt went missing, I\'ve been putting the group\'s survival on my back."'
-    G '"It\'s my job to take care of your guys and when you went missing, I felt like I\'d failed."'
+    G '"It\'s my job to take care of you guys and when you went missing, I felt like I\'d failed."'
     show calliope angry1
     G '"We had that whole plan figured out and ready to go, and then you disappeared!"'
     P '"What plan?"'
@@ -321,11 +321,12 @@ label ch2_jogchoice_end:
     show ben normal talk at left with dissolve
     show calliope at right
 
-    "I'm guessing this Ben guy is a close friend of ours. He seems nice, but..."
+    "I'm guessing this Ben guy was a close friend of ours. He seemed nice, but..."
 
-    B "\"Calliope, the leader of our little band of misfits, sent you to an outpost to grab some supplies a few days back. You didn't come back, so we sent some of the group to go looking for you. We got worried when we went a few days without hearing from you, and we'd assumed the worst.\""
+    B "\"Calliope, the leader of our little band of misfits, sent you to an outpost to grab some supplies a few days back. \""
+    B "\"You didn't come back, so we sent some of the group to go looking for you. We got worried when we went a few days without hearing from you, and we'd assumed the worst.\""
 
-    "Do these people know who I am? I've never seen them in my life, but they're treating me so kindly..."
+    "Did these people know who I was? I've never seen them in my life, but they were treating me so kindly..."
 
     "Wait... \"assumed the worst\"?"
     show ben smile at left
@@ -333,7 +334,7 @@ label ch2_jogchoice_end:
     show ben normal at left
     show calliope normal at right with vpunch
 
-    "This \"Calliope\"... she looks exactly like Lyra... but instead of being my personal caretaker... she seems to be the caretaker for this whole \"group\" thing that was mentioned."
+    "This \"Calliope\"... she looked exactly like Lyra... but instead of being my personal caretaker... she seemed to be the caretaker for this whole \"group\" thing that was mentioned."
 
     G "\"Anyway, once we get to the bar, you and I will stand by while Ben snags some stuff we could use.\""
 
@@ -411,19 +412,20 @@ label chapter2_bar:
 
     with fade
 
-    "The second half of what seems to be a gladiator fight has started on the television. One of the team, the L.A, chose to replace one of their fighters with a big, heavy-weapon wielder so they can give enough pressure to Hollywood, the opposing team. In the meantime, Hollywood didn’t make any changes. It seemed like their faction leader was pretty satisfied with the current fighter."
+    "The second half of what seemed to be a gladiator fight had started on the television. One of the team, the L.A, chose to replace one of their fighters with a big, heavy-weapon wielder so they could give enough pressure to Hollywood, the opposing team."
+    "In the meantime, Hollywood didn’t make any changes. It seemed like their faction leader was pretty satisfied with the current fighter."
 
-    "After 45 minutes, the score is 1-1. Almost everyone in the bar stood up and stared at the screen. Some of the Hollywood fans were so nervous that they turned their faces away and started praying."
+    "After 45 minutes, the score was 1-1. Almost everyone in the bar stood up and stared at the screen. Some of the Hollywood fans were so nervous that they turned their faces away and started praying."
 
     "\"Headshot! Hollywood has scored! Hollywood fighter, Alison, gave a powerful swing and sent the L.A fighter’s head flying!\""
 
-    "Hollywood fans started cheering. Although they only occupied a quarter of the bar, the noise they created roared throughout the bar room"
+    "Hollywood fans started cheering. Although they only occupied a quarter of the bar, the noise they created roared throughout the bar room."
 
     show terry with dissolve
 
     LV "\"YES!!!!! We are the champion folks! I've waited for so many years!\""
 
-    "On the other hand, all L.A fans were stunned. Some of them use their hands to cover their face. They still couldn't believe this happened."
+    "On the other hand, all L.A fans were stunned. Some of them used their hands to cover their faces. They still couldn't believe this happened."
 
     show terry at right with move
     show lizardmen bandits at left with dissolve
@@ -490,7 +492,7 @@ label chapter2_bar:
 
     "More and more drunk people heard that there was a fight in the Frolic Room and tried to squeeze in to see what happened."
 
-    "Calliope managed to pick up Ben and ran out away from Terry and the two lizardmen"
+    "Calliope managed to pick up Ben and ran out away from Terry and the two lizardmen."
     show ben serious talk at left with dissolve
     show calliope serious at right with dissolve
     B "\"We're too late. There is no way out now. All of the exits are blocked by crowds. We'd better start moving to one of the exits and see if we can get through them.\""
@@ -514,7 +516,7 @@ label chapter2_bar:
 
     "I didn’t hear Calliope because the crowd was getting crazy. Everyone was fighting each other."
 
-    "As I was moving, I found out that the ice arrow is from a semi-transparent frog. "
+    "As I was moving, I found out that the ice arrow was from a semi-transparent frog. "
 
     P "Wow, I have never seen animals like this."
     show lizardmen bandits at left with dissolve
@@ -522,7 +524,7 @@ label chapter2_bar:
     show lizardmen bandits at left with vpunch
     LB "\"I like your minion. It looks strong. But I am going to kill you and it will be mine! Hahahahahaha…\""
 
-    LV "\"Don’t ever think about it, loser.\""
+    LV "\"Don’t even think about it, loser.\""
     show terry at right with hpunch
     show lizardmen bandits at left with hpunch
 
@@ -534,9 +536,9 @@ label chapter2_bar:
 
     "After I opened my eyes, the fight became more chaotic."
 
-    "Lizardmen Bandits and Terry were fighting in the middle of the bar while their minions were also fighting using their magic power. They use whatever is near them to attack and defend."
+    "Lizardmen Bandits and Terry were fighting in the middle of the bar while their minions were also fighting using their magic power. They used whatever was near them to attack and defend."
 
-    "The bar is completely in chaos. Chairs, knives, and bottles are flying around the bar."
+    "The bar was completely in chaos. Chairs, knives, and bottles were flying around the bar."
 
     "Suddenly, someone caught my arm and tried to drag me out of the frontline."
 
@@ -642,7 +644,7 @@ menu:
 
         "I suddenly felt very out of place. The reality of being in a completely different world, with completely different rules and ideas began to hit me. What was happening? What was I doing here?"
 
-        "Maybe I need to go. Maybe I wasn’t ever meant to be here."
+        "Maybe I needed to go. Maybe I wasn’t ever meant to be here."
 
         "Before I could really consider leaving, Calliope began to cry out."
 
@@ -783,7 +785,7 @@ label chapter4_start:
     hide daysky
     play sound "audio/doorOpened.mp3"
 
-    "I walked through the front door and immediately noticed the lack of furnishings inside. In my residence, I have a place to sit, stand, or sleep when I wish."
+    "I walked through the front door and immediately noticed the lack of furnishings inside. In my residence, I had a place to sit, stand, or sleep whenever I wished."
 
     "In this appeals office, there wasn't a single chair to be seen, nor a sign directing me to the appropriate place to report the mirror."
 
@@ -793,7 +795,7 @@ label chapter4_start:
 
     "I walked a few steps into a narrow hallway filled with nothing but gray walls until I noticed a person sitting behind a desk further down the hall."
 
-    "Their eyes were completely blank, focused on nothing in particular. When I walked up to them, they jumped in their seat, urging me to take a step back myself. My heart started beating just a bit faster, reminding me of my time with the guide."
+    "Their eyes were completely blank, focused on nothing in particular. When I walked up to them, they jumped in their seat, urging me to take a step back myself. My heart started beating just a bit faster, reminding me of my time with Calliope."
 
     P "I'd like to ask you about this strange object I found. I've never been here before, and I'm not sure exactly how this process works, but I've brought it here in the hopes that you can help me with it... whatever it is."
 
@@ -1056,7 +1058,6 @@ label enddoorchoice:
     "The magical blue hue of the mirror lit up the cave with a beautiful glow."
 
     "This was it. This was what the magic trail had been leading to."
-    stop music fadeout 2.0
     #Chapter 5 END
 
 #Chapter 6
@@ -1073,7 +1074,7 @@ label ch6_start:
 
     "I could faintly hear someone calling out to me, but I didn’t care."
     "I was already close enough to the mirror where I could look in and see the scenery of the other world."
-
+    stop music fadeout 2.0
     stop sound
 
     "But every muscle in my body suddenly froze, and the sound of my last footstep echoed throughout the cave."
@@ -1088,7 +1089,7 @@ label ch6_start:
     L "\"I get that things you don't understand can be pretty overwhelming.\""
 
     "She didn't have her usual smile, and her voice had a coldness to it despite addressing me in an endearing way."
-    "There's no way around it now. I have to come clean...but it should be fine."
+    "There was no way around it now. I had to come clean...but it should be fine."
     "Lyra did take care of me for my whole life."
 
     P "\"I’m sorry Lyra. I wasn’t sure how you’d react; I didn’t even understand what had happened to me, so I hid the truth.\""
@@ -1113,7 +1114,7 @@ label ch6_start:
     L "\"Although that won't really matter once we get rid of all those barbarians.\""
 
     "..."
-
+    play music "audio/BTR-Ominous-02.mp3" loop volume 0.5
     hide lyra normal at right
     show lyra surprised at right
     L "\"Oh! I forgot that you can't move at all. I'll let you go right away.\""
@@ -1129,10 +1130,10 @@ label ch6_start:
     "My emotions were buzzing, and the sound from the mirror grew louder and louder in my head."
     "Anger? Frustration? Confusion?"
     "I felt all of it."
-    "How could I stop the government's plan when I'm so powerless?"
+    "How could I stop the government's plan when I was so powerless?"
     "As thoughts were racing through my head, I could feel a tingling sensation building up within my body and spreading to the tips of my fingers."
-    "Could it be...that?"
-    "People here don't use magic like those fireballs I saw before, but it's worth a shot."
+    "Could it have been...that?"
+    "People here didn't use magic like those fireballs I saw before, but it was worth a shot."
 
     "Lyra released me, and I swung to the side."
     hide lyra happy at right
@@ -1149,7 +1150,8 @@ label break_mirror_choice:
     "I threw my arms in the direction of the mirror, and a blast of magical energy barreled towards it."
     hide lyra surprised at right with moveoutright
     "Almost immediately, I felt someone hit my neck, and I fell to the ground."
-    "As my vision faded, I could see the see the shattered pieces of the mirror next to me."
+    "As my vision faded, I could see the shattered pieces of the mirror next to me."
+    stop music fadeout 3.0
     scene finalcave_closest_blurred with fadehold
     scene black with fadehold
 
@@ -1180,11 +1182,13 @@ label break_mirror_choice:
 
 label keep_mirror_choice:
     show lyra surprised at right
+    stop music fadeout 3.0
     "I threw my arms in the direction of Lyra, and a blast of magical energy barreled towards her."
     "She would normally easily be able to avoid something like that, but I think she was frozen with shock."
     "The blast knocked her to the ground. I'd never seen her this angry before, but I didn't even care as she started shouting at me."
     with vpunch
     hide lyra surprised at right with moveoutright
+    play music "audio/A Better Place [wav].wav" fadein 3.0 volume 0.5
     "I was already running towards the mirror."
 
     hide lyra surprised at right
@@ -1193,6 +1197,7 @@ label keep_mirror_choice:
     L "\"We gave you a perfect life, and you're willing to just throw it all away?\""
     L "\"Remember this. Your worthless life will be anything but perfect from this point on.\""
     L "\"I will personally make sure that it's even more of a living hell than that wretched place you're going.\""
+    stop music fadeout 2.0
 
     scene black with flash
 
