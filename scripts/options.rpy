@@ -31,7 +31,7 @@ define config.version = "1.0"
 
 define gui.about = _p("""In the year 3̵,̴̳̉.̴̗̤̙̩͆̇i̷̎l̵̹̉'̸͔̪̫͑,̴̉,... Los Angeles has become the ideal home: a utopian city where hunger, pain, and uncertainty do not exist. Here, our protagonist lives an average and monotonous life; until one day, they discover a magical handheld mirror that allows them to transport to and from a parallel world: a dystopian Los Angeles where people are forced to fight and scavenge for their survival. As our protagonist meets the people of this world, bits and pieces of unfamiliar feelings begin to surface: Pain. Longing. Happiness. They begin to realize the value in freedom and companionship. With a newfound sense of identity, our protagonist tries to stay in this dystopian world, but their naivete exposes the parallel world to the government. Our protagonist must then make a final choice: destroy the mirror and never return to the parallel city, or risk starting a war between two worlds.
 
-""")
+\n\nMade by: Victoria Winn, Justin Zhang, Jason Fan, Sitan Cai, Daniel Garcia, Loc Trinh""")
 
 
 ## A short name for the game used for executables and directories in the built
